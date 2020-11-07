@@ -1,0 +1,57 @@
+carrousel:
+  - title: Java
+    logo: logo-java.png
+    link: https://java.com
+  - title: Spring Framework
+    logo: logo-spring.png
+    link: https://spring.io/
+  - title: Hibernate ORM
+    logo: logo-hibernate.png
+    link: https://hibernate.org/orm/
+  - title: Maven
+    logo: logo-maven.png
+    link: https://maven.apache.org/
+  - title: Amazon Web Services
+    logo: logo-aws.png
+    link: https://aws.amazon.com/
+  - title: HTML5 + CSS3 + Javascript
+    logo: logo-html-css.png
+    link: 
+  - title: jQuery
+    logo: logo-jquery.png
+    link: https://jquery.com
+  - title: Bootstrap
+    logo: logo-bootstrap.png
+    link: http://getbootstrap.com
+  - title: Thymeleaf
+    logo: logo-thymeleaf.png
+    link: https://www.thymeleaf.org/
+  - title: Git
+    logo: logo-git.png
+    link: https://git-scm.com/
+
+details:
+  - title: Java
+    level: expert
+    years: 12
+    percentage: 95
+  - title: Spring Framework
+    level: expert
+    years: 12
+    percentage: 90
+  - title: Hibernate ORM
+    level: expert
+    years: 11
+    percentage: 80
+  - title: Maven
+    level: advanced
+    years: 12
+    percentage: 90
+  - title: Amazon Web Services
+    level: advanced
+    years: 7
+    percentage: 75
+  - title: HTML & CSS
+    level: advanced
+    years: 17
+    percentage: 80

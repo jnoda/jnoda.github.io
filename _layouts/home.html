@@ -1,0 +1,351 @@
+---
+layout: default
+---
+
+<section id="about" class="section section-about">
+    <div class="animate-up">
+        <div class="section-box">
+            <div class="profile">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="profile-photo">
+                            <img src="/assets/img/julio-noda-v1.jpg" alt="{{ site.author }}">
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="profile-info">
+                            <div class="profile-items clearfix">
+                                <div class="profile-preword">
+                                    <span>{{ site.data.translations[page.lang].hello_page.hello }}</span>
+                                </div>
+                            </div>
+                            <h1 class="profile-title">
+                                <span>{{ site.data.translations[page.lang].hello_page.im }}</span> Julio Noda</h1>
+
+                            <h2 class="profile-position">{{ site.data.translations[page.lang].position }}</h2>
+                        </div>
+                        <ul class="profile-list">
+                            {% for detail in site.data.translations[page.lang].hello_page.profile %}
+                            <li class="clearfix">
+                                <strong class="title">{{ detail[1].title }}</strong>
+                                <span class="cont">{{ detail[1].value }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-social">
+                <ul class="social">
+                    {% for social in site.social %}
+                    <li>
+                        <a class="ripple-centered" href="{{ social[1] }}" target="_blank">
+                            <i class="rsicon rsicon-{{ social[0] }}"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-txt-btn">
+            <p>
+                <a class="btn btn-lg btn-border ripple" target="_blank"
+                    href="julio-noda-{{ page.lang }}.pdf">{{ site.data.translations[page.lang].hello_page.download_resume }}</a>
+            </p>
+            <p>{{ site.data.translations[page.lang].hello_page.headline }}</p>
+        </div>
+    </div>
+</section>
+<!-- #about -->
+
+<section id="languages" class="section section-language">
+    <div class="animate-up">
+        <h2 class="section-title">{{ site.data.translations[page.lang].hello_page.languages.title }}</h2>
+
+        <div class="section-box">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="progress-bar">
+                        <div class="bar-data">
+                            <span
+                                class="bar-title">{{ site.data.translations[page.lang].hello_page.languages.spanish.title }}</span>
+                            <span
+                                class="bar-value">{{ site.data.translations[page.lang].hello_page.languages.spanish.proficiency }}</span>
+                        </div>
+                        <div class="bar-line">
+                            <span class="bar-fill" data-width="100%"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="progress-bar">
+                        <div class="bar-data">
+                            <span
+                                class="bar-title">{{ site.data.translations[page.lang].hello_page.languages.english.title }}</span>
+                            <span
+                                class="bar-value">{{ site.data.translations[page.lang].hello_page.languages.english.proficiency }}</span>
+                        </div>
+                        <div class="bar-line">
+                            <span class="bar-fill" data-width="75%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #languages -->
+
+<section id="skills" class="section section-skills section-clients">
+    <div class="animate-up">
+        <h2 class="section-title">{{ site.data.translations[page.lang].hello_page.skills.title }}</h2>
+
+        <div class="clients-carousel" style="margin-bottom: 20px">
+            {% for skill in site.data.skills.carrousel %}
+            <div class="client-logo">
+                <a href="{{ skill.link }}" target="_blank">
+                    <img src="/assets/img/logos/{{ skill.logo }}" alt="{{ skill.title }}" title="{{ skill.title }}">
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="section-box">
+            {% for skill in site.data.skills.details %}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            {% if thecycle == 'odd' %}
+            <div class="row">
+                {% endif %}
+                <div class="col-sm-6">
+                    <div class="progress-bar">
+                        <div class="bar-data">
+                            <span class="bar-title">{{ skill.title }}</span>
+                            <span class="bar-value">{{ site.data.translations[page.lang].skill_level[skill.level] }}
+                                ({{ site.data.translations[page.lang].years | replace: "%d" , skill.years }})</span>
+                        </div>
+                        <div class="bar-line">
+                            <span class="bar-fill" data-width="{{ skill.percentage }}%"></span>
+                        </div>
+                    </div>
+                </div>
+                {% if thecycle == 'even' %}
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+</section>
+<!-- #skills -->
+
+<section id="experience" class="section section-experience">
+    <div class="animate-up">
+        <h2 class="section-title">{{ site.data.translations[page.lang].hello_page.experience.title }}</h2>
+
+        <div class="timeline">
+            <div class="timeline-bar"></div>
+            <div class="timeline-inner clearfix">
+
+                {% assign posts=site.posts | where:"layout", "job" | where:"lang", page.lang %}
+                {% for post in posts %}
+                <div class="timeline-box timeline-box-{% cycle 'left', 'right' %}">
+                    <span class="dot"></span>
+
+                    <div class="timeline-box-inner animate-{% cycle 'right', 'left' %}">
+                        <span class="arrow"></span>
+
+                        <div class="timeline-head">
+                            <div class="date">
+                                {{ post.date | date: "%Y" }} -
+                                {% if post.to_date %}
+                                {{ post.to_date | date: "%Y" }}
+                                {% else %}
+                                {{ site.data.translations[page.lang].present }}
+                                {% endif %}
+                            </div>
+                            {% if post.company_link %}
+                            <a class="img" href="{{ post.company_link }}">
+                                <img src="/assets/img/logos/{{ post.company_logo }}" alt="{{ post.company }}">
+                            </a>
+                            {% else %}
+                            <h3>{{ post.company | upcase }}</h3>
+                            {% endif %}
+                            <h4>{{ post.position }}</h4>
+                        </div>
+                        {{ post.excerpt }}
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    <div class="pf-grid-more text-center">
+        <span class="ajax-loader"></span>
+        <button class="btn btn-border ripple">
+            <i class="rsicon rsicon-add"></i>
+        </button>
+    </div>
+</section>
+<!-- #experience -->
+
+<section id="education" class="section section-education">
+    <div class="animate-up">
+        <h2 class="section-title">{{ site.data.translations[page.lang].hello_page.education.title }}</h2>
+
+        <div class="timeline">
+            <div class="timeline-bar"></div>
+            <div class="timeline-inner clearfix">
+
+                {% assign posts=site.posts | where:"layout", "education" | where:"lang", page.lang %}
+                {% for post in posts %}
+                <div class="timeline-box timeline-box-compact timeline-box-{% cycle 'left', 'right' %}">
+                    <span class="dot"></span>
+
+                    <div class="timeline-box-inner animate-{% cycle 'right', 'left' %}">
+                        <span class="arrow"></span>
+
+                        <div class="timeline-head">
+                            <div class="date">
+                                <span>
+                                    {{ post.date | date: "%Y" }} -
+                                    {% if post.toYear %}
+                                    {{ post.toYear }}
+                                    {% else %}
+                                    {{ site.data.translations[page.lang].present }}
+                                    {% endif %}
+                                </span>
+                            </div>
+                            <h3>{{ post.degree }}, {{ post.field }}</h3>
+                            <h4>{{ post.school }}</h4>
+                        </div>
+                        {{ post.excerpt }}
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #education -->
+
+<section id="references" class="section section-references">
+    <div class="animate-up">
+        <h2 class="section-title">{{ site.data.translations[page.lang].hello_page.references.title}}</h2>
+
+        <div class="section-box">
+            <ul class="ref-slider">
+                {% for reference in site.data.translations[page.lang].hello_page.reference_list %}
+                <li>
+                    <div class="ref-box">
+                        <div class="person-speech">
+                            <p>{{ reference[1].text}}</p>
+                        </div>
+                        <div class="person-info clearfix">
+                            <img src="/assets/img/{{ reference[1].photo }}" class="person-img" alt="{{ reference[1].name }}">
+                            <div class="person-name-title">
+                                <span class="person-name">{{ reference[1].name }}</span>
+                                <span class="person-title">{{ reference[1].position }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="ref-slider-nav">
+                <span id="ref-slider-prev" class="slider-prev"></span>
+                <span id="ref-slider-next" class="slider-next"></span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #references -->
+
+<section id="interests" class="section section-interests">
+    <div class="animate-up">
+        <h2 class="section-title">{{ site.data.translations[page.lang].hello_page.interests.title }}</h2>
+
+        <div class="section-box">
+            <p>{{ site.data.translations[page.lang].hello_page.interests.text }}</p>
+
+            <ul class="interests-list">
+                {% for interest in site.data.translations[page.lang].hello_page.interest_list %}
+                <li>
+                    <i class="rsicon {{ interest[1].icon }}"></i>
+                    <span>{{ interest[1].text }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- #interests -->
+
+<section id="contact" class="section section-contact">
+    <div class="animate-up">
+        <h2 class="section-title">{{ site.data.translations[page.lang].hello_page.contact.title }}</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="section-box contact-form">
+                    <h3>{{ site.data.translations[page.lang].hello_page.contact.text }}</h3>
+
+                    <form class="rsForm" action="https://us-central1-julio-resume.cloudfunctions.net/sendMessage"
+                        method="post">
+                        <div class="input-field">
+                            <label>{{ site.data.translations[page.lang].contact_form.name }}</label>
+                            <input type="text" name="rsName" required>
+                            <span class="line"></span>
+                        </div>
+
+                        <div class="input-field">
+                            <label>{{ site.data.translations[page.lang].contact_form.email }}</label>
+                            <input type="email" name="rsEmail" required>
+                            <span class="line"></span>
+                        </div>
+
+                        <div class="input-field">
+                            <label>{{ site.data.translations[page.lang].contact_form.subject }}</label>
+                            <input type="text" name="rsSubject" required>
+                            <span class="line"></span>
+                        </div>
+
+                        <div class="input-field">
+                            <label>{{ site.data.translations[page.lang].contact_form.message }}</label>
+                            <textarea rows="4" name="rsMessage" required></textarea>
+                            <span class="line"></span>
+                        </div>
+
+                        <span class="btn-outer btn-primary-outer ripple">
+                            <input class="rsFormSubmit btn btn-lg btn-primary" type="submit"
+                                value="{{ site.data.translations[page.lang].contact_form.send }}">
+                        </span>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="section-box contact-info has-map">
+                    <ul class="contact-list">
+                        <li class="clearfix">
+                            <strong>{{ site.data.translations[page.lang].hello_page.profile.location.title }}</strong>
+                            <span>{{ site.data.translations[page.lang].hello_page.profile.location.value}}</span>
+                        </li>
+                        <li class="clearfix">
+                            <strong>{{ site.data.translations[page.lang].hello_page.profile.phone.title }}</strong>
+                            <span>{{ site.data.translations[page.lang].hello_page.profile.phone.value }}</span>
+                        </li>
+                        <li class="clearfix">
+                            <strong>{{ site.data.translations[page.lang].hello_page.profile.email.title }}</strong>
+                            <span>{{ site.data.translations[page.lang].hello_page.profile.email.value }}</span>
+                        </li>
+                    </ul>
+
+                    <div id="map" data-latitude="40.3955094" data-longitude="-3.7109873"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #contact -->

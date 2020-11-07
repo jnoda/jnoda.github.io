@@ -1,0 +1,113 @@
+categories: Categories
+search: Search
+tags: Tags
+prev: Prev
+next: Next
+comment: Comments
+archive_a: Archives
+archive_b: "Archives: %s"
+page: Page %d
+recent_posts: Recent Posts
+newer: Newer
+older: Older
+share: Share
+rss_feed: RSS Feed
+category: Category
+tag: Tag
+more: read more
+
+# custom
+loading: Loading
+position: Software Architect and Java Developer
+present: Present
+years: +%d years
+skill_level:
+  expert: Expert
+  advanced: Advanced
+menu: Menu
+menu_list:
+  about:
+    name: About
+    url: '/en/#about'
+  skills:
+    name: Skills
+    url: '/en/#skills'
+  experience:    
+    name: Experience
+    url: '/en/#experience'
+  contact:
+    name: Contact
+    url: '/en/#contact'
+  lang:
+    name: Español
+    url: '/es/'
+  
+hello_page:
+  hello: Hello
+  im: I'm
+  profile:
+    email:
+      title: Email
+      value: <a href="mailto:julio.noda@gmail.com">julio.noda@gmail.com</a>
+    phone:
+      title: Phone
+      value: <a href="tel:+34 622 25 91 99">+34 622 25 91 99</a>
+    location:
+      title: Location
+      value: Madrid, Spain
+    currently_at:
+      title: Currently at
+      value: <a href="https://speexx.com">Speexx</a>
+    experience:
+      title: <span class="button">Experience</span>
+      value: +15 years
+  download_resume: Download resume
+  headline: Hello! I’m Julio Noda. Java architect, analyst and developer, with more than 15 years of experience making software, mostly building custom web applications. With great teamwork abilities, assuming tasks with initiative and autonomy. I have excellent aptitudes for finding technological solutions.
+  languages:
+    title: Languages
+    spanish:
+      title: Spanish
+      proficiency: Native
+    english:
+      title: English
+      proficiency: Full professional proficiency
+  skills:
+    title: Professional Skills
+  experience:
+    title: Work experience
+  education:
+    title: Education
+  references:
+    title: References
+  reference_list:
+    lester:
+      name: Lester Kirkland
+      photo: lester-kirkland.jpg
+      position: Founder and CEO, Resolution Art Inc.
+      text: Julio worked for us for many years and consistently demonstrated a very high degree of professionalism in his work. He understands very well the principles of good software development and always applied these principles resulting in the delivering well structured and well documented software. He is a great team player and in my opinion quite capable of leading a team. As far as I'm concerned Julio gets absolute top marks!
+  interests:
+    title: My Interests
+    text: Enthusiastic about gaining and passing on knowledge, specially new technologies and good practices. Very keen on photography; I also enjoy cinema, music and video games on my free time.
+  interest_list:  
+    photography:
+      text: Photography
+      icon: rsicon-camera-retro
+    cinema:
+      text: Cinema
+      icon: rsicon-film
+    music:
+      text: Music
+      icon: rsicon-music
+    videogames:
+      text: Videogames
+      icon: rsicon-gamepad
+  contact:
+    title: Contact Me
+    text: Feel free to contact me
+contact_form:
+  header: Contact Me
+  name: Name
+  email: Email
+  subject: Subject
+  message: Message
+  send: Send   

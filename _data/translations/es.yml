@@ -1,0 +1,113 @@
+categories: Categorías
+search: Buscar
+tags: Tags
+prev: Previo
+next: Siguiente
+comment: Comentarios
+archive_a: Archivos
+archive_b: "Archivos: %s"
+page: Página %d
+recent_posts: Posts recientes
+newer: Nuevo
+older: Viejo
+share: Compartir
+rss_feed: RSS
+category: Categoría
+tag: Tag
+more: leer más
+
+# custom
+loading: Cargando
+position: Arquitecto de Software y Desarrollador Java
+present: Actualidad
+years: +%d años
+skill_level:
+  expert: Experto
+  advanced: Avanzado
+menu: Menú
+menu_list: 
+  about:
+    name: Acerca
+    url: '/es/#about'
+  skills:
+    name: Habilidades
+    url: '/es/#skills'
+  experience:
+    name: Experiencia
+    url: '/es/#experience'
+  contact:
+    name: Contacto
+    url: '/es/#contact'
+  lang:
+    name: English
+    url: '/en/'
+
+hello_page:
+  hello: Hola
+  im: Soy
+  profile:
+    email:
+      title: Correo
+      value: <a href="mailto:julio.noda@gmail.com">julio.noda@gmail.com</a>
+    phone:
+      title: Teléfono
+      value: <a href="tel:+34 622 25 91 99">+34 622 25 91 99</a>
+    location:
+      title: Ubicación
+      value: Madrid, España
+    currently_at:
+      title: Actualmente en
+      value: <a href="https://speexx.com">Speexx</a>
+    experience:
+      title: <span class="button">Experiencia</span>
+      value: +15 años
+  download_resume: Descargar CV
+  headline: ¡Hola! Soy Julio Noda. Arquitecto, analista y desarrollador para entorno Java, con más de 15 años de experiencia desarrollando software, principalmente creando aplicaciones web a la medida. Con gran capacidad de trabajo en grupo, además de iniciativa y autonomía en el desempeño de tareas. Dispongo de una excelente aptitud para la búsqueda de soluciones tecnológicas.
+  languages:
+    title: Idiomas
+    spanish: 
+      title: Español
+      proficiency: Nativo
+    english:
+      title: Inglés
+      proficiency: Competencia profesional completa
+  skills:
+    title: Habilidades
+  experience:
+    title: Experiencia laboral
+  education:
+    title: Educación
+  references:
+    title: Referencias
+  reference_list:
+    lester:
+      name: Lester Kirkland
+      photo: lester-kirkland.jpg
+      position: Fundador y CEO, Resolution Art Inc.
+      text: Julio trabajó para nosotros por muchos años y demostró de forma consistente un grado muy alto de profesionalismo en su trabajo. Entiende muy bien los principios del buen desarrollo de software y siempre aplicó estos principios, resultando en la entrega de software bien estructurado y documentado. Es un estupendo jugador de equipo y, en mi opinión, enteramente capaz de liderar un equipo. En lo que a mi respecta, Julio obtiene absolutamente las mejores notas! 
+  interests:
+    title: Mis Intereses
+    text: Entusiasta de adquirir y transmitir conocimientos, especialmente nuevas tecnologías y buenas prácticas. Aficionado a la fotografía; también disfruto del cine, la música y los videojuegos en mi tiempo libre.
+  interest_list:
+    photography:
+      text: Fotografía
+      icon: rsicon-camera-retro
+    cinema:
+      text: Cine
+      icon: rsicon-film
+    music:
+      text: Música
+      icon: rsicon-music
+    videogames:
+      text: Videojuegos
+      icon: rsicon-gamepad
+  contact:
+    title: Contacto
+    text: Contáctame si quieres
+contact_form:
+  header: Contáctame
+  name: Nombre
+  email: Correo
+  subject: Asunto
+  message: Mensaje
+  send: Enviar  
