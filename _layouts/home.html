@@ -147,7 +147,7 @@ layout: default
             <div class="timeline-inner clearfix">
 
                 {% assign posts=site.posts | where:"layout", "job" | where:"lang", page.lang %}
-                {% for post in posts %}
+                {% for post in posts limit:6%}
                 <div class="timeline-box timeline-box-{% cycle 'left', 'right' %}">
                     <span class="dot"></span>
 
