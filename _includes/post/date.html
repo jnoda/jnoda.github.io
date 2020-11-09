@@ -1,0 +1,4 @@
+<time class="post-datetime" datetime="{{ include.post.date | date_to_xmlschema }}" itemprop="datePublished">
+    <span class="day">{{ include.post.date | date:"%d" }}</span>
+    <span class="month">{{ include.post.date | date:"%b" | upcase }}</span>
+</time>

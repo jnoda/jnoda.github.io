@@ -4,12 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-    <title>{{ site.author }} - {{ site.data.translations[page.lang].position }}</title>
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/ico" href="/assets/favicon.ico">
+    <title>
+        {% if page.layout == "home" %}
+        {{ site.title }} &middot; {{ site.data.translations[page.lang].position }}
+        {% else %}
+        {{ page.title }} &middot; {{ site.title }}
+        {% endif %}
+    </title>
+
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/ico" href="/assets/favicon.png">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fredoka+One">
@@ -21,7 +30,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="/assets/js/plugins/jquery.bxslider/jquery.bxslider.css">
-    <link rel="stylesheet" type="text/css" href="/assets/js/plugins/jquery.customscroll/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="/assets/js/plugins/jquery.customscroll/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/js/plugins/jquery.mediaelement/mediaelementplayer.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/js/plugins/jquery.fancybox/jquery.fancybox.css">
     <link rel="stylesheet" type="text/css" href="/assets/js/plugins/jquery.owlcarousel/owl.carousel.css">
@@ -34,26 +44,30 @@
     <script src="/assets/js/libs/modernizr.js"></script>
 
     {% if page.lang_ref %}
-        {% assign posts=site.posts | where: "lang_ref", page.lang_ref | sort: 'lang' %}
-        {% if posts.size == 0 %}
-            {% assign posts=site.pages | where:"lang_ref", page.lang_ref | sort: 'lang' %}
-        {% endif %}
-        {% if posts.size > 0 %}
-            {% for post in posts %}
-            <link rel="alternate" hreflang="{{post.lang}}" href="{{ site.baseurl }}{{ post.url }}" />
-            {% endfor %}
-        {% endif %}
+    {% assign posts=site.posts | where: "lang_ref", page.lang_ref | sort: 'lang' %}
+    {% if posts.size == 0 %}
+    {% assign posts=site.pages | where:"lang_ref", page.lang_ref | sort: 'lang' %}
+    {% endif %}
+    {% if posts.size > 0 %}
+    {% for post in posts %}
+    <link rel="alternate" hreflang="{{post.lang}}" href="{{ site.baseurl }}{{ post.url }}" />
+    {% endfor %}
+    {% endif %}
+    {% endif %}
+
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
     {% endif %}
 </head>
 
 {% capture body_class %}
-    loading
-    {% if page.is_home %}
-        {{" home" }}
-    {% endif %}
-    {% unless page.hide_header_img %}
-        {{" header-has-img" }}
-    {% endunless %}
+loading
+{% if page.layout == "home" %}
+{{"home" }}
+{% endif %}
+{% unless page.hide_header_img %}
+{{"header-has-img" }}
+{% endunless %}
 {% endcapture %}
 
 <body class="{{ body_class | strip }}">
@@ -67,9 +81,9 @@
             <nav class="nav">
                 <ul class="clearfix">
                     {% for menu in site.data.translations[page.lang].menu_list %}
-                        <li>
-                            <a href="{{ menu[1].url }}">{{ menu[1].name }}</a>
-                        </li>
+                    <li>
+                        <a href="{{ menu[1].url }}">{{ menu[1].name }}</a>
+                    </li>
                     {% endfor %}
                 </ul>
             </nav>
@@ -85,10 +99,10 @@
         <div class="widget-area">
             <aside class="widget widget-profile">
                 <div class="profile-photo">
-                    <img src="/assets/img/julio-noda-v2.jpg" alt="{{ site.author }}">
+                    <img src="/assets/img/julio-noda-v2.jpg" alt="Julio Noda">
                 </div>
                 <div class="profile-info">
-                    <h2 class="profile-title">{{ site.author }}</h2>
+                    <h2 class="profile-title">Julio Noda</h2>
 
                     <h3 class="profile-position">{{ site.data.translations[page.lang].position }}</h3>
                 </div>
@@ -162,9 +176,9 @@
                                     <nav class="nav">
                                         <ul class="clearfix">
                                             {% for menu in site.data.translations[page.lang].menu_list %}
-                                                <li>
-                                                    <a href="{{ menu[1].url }}">{{ menu[1].name }}</a>
-                                                </li>
+                                            <li>
+                                                <a href="{{ menu[1].url }}">{{ menu[1].name }}</a>
+                                            </li>
                                             {% endfor %}
                                         </ul>
                                     </nav>

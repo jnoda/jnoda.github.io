@@ -1,0 +1,45 @@
+<div class="row animate-up">
+    <div class="col-sm-12">
+        <main class="post-single">
+            <article id="{{ include.post.layout }}-{{ include.post.slug }}" class="post-content section-box" itemscope
+                itemprop="blogPost">
+
+                {% if include.post.media.type %}
+                <div class="post-media">
+                    {% include {{ include.post.media.type | append:".html" | prepend:"post/media-type/single/" }} post=include.post  %}
+                </div>
+                {% endif %}
+
+                <div class="post-inner">
+                    <header class="post-header">
+                        <div class="post-data">
+
+                            <div class="post-tag">
+                                {% include post/tag.html post=include.post %}
+                            </div>
+
+                            <div class="post-title-wrap">
+                                <h1 class="post-title" itemprop="name">{{ include.post.title }}</h1>
+                                {% include {{ include.post.layout | append:"/date.html" }} post=include.post  %}
+                            </div>
+
+                            {% include {{ include.post.layout | append:"/info.html" }} post=include.post  %}
+
+                        </div>
+                    </header>
+
+                    <div class="post-editor clearfix" itemprop="articleBody">
+                        {{ include.post.content }}
+                    </div>
+
+                    <footer class="post-footer">
+                        <!-- share actions -->
+                    </footer>
+                </div>
+            </article>
+
+            {% include post/nav.html post=include.post  %}
+
+        </main>
+    </div>
+</div>

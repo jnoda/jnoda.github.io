@@ -29,7 +29,6 @@ permalink: /:categories/:year/:title:output_ext
 excerpt_separator: <!--more-->
 
 # Build settings
-theme: minima
 plugins:
 
 # Exclude from processing.

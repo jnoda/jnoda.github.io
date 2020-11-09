@@ -1,0 +1,14 @@
+<div class="post-info">
+    <div><strong>{{ include.post.school }}</strong></div>
+    <span>
+        <i class="rsicon rsicon-location"></i>{{ include.post.location }}
+    </span>
+    <span>
+        <i class="rsicon rsicon-calendar"></i>{{ include.post.date | date: "%Y" }} -
+        {% if include.post.to_year %}
+        {{ include.post.to_year }}
+        {% else %}
+        {{ site.data.translations[include.post.lang].present }}
+        {% endif %}
+    </span>
+</div>

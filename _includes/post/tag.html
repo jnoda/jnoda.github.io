@@ -1,0 +1,8 @@
+{% for category in include.post.categories %}
+{% if category != include.post.lang %}
+<a class="article-category" href="/{{ include.post.lang }}/{{ category }}/">#{{ category | upcase }}</a>
+{% endif %}
+{% endfor %}
+{% for tag in include.post.tags %}
+<a class="article-tag" href="/{{ include.post.lang }}/{{ tag }}/">#{{ tag | upcase }}</a>
+{% endfor %}

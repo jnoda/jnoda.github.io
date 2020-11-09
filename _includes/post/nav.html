@@ -1,0 +1,45 @@
+{% for post in site.posts %}
+{% if post.lang == page.lang %}
+{% if post.id == page.id %}
+{% break %}
+{% endif %}
+{% assign prev_post = post %}
+{% endif %}
+{% endfor %}
+
+{% for post in site.posts reversed %}
+{% if post.lang == page.lang %}
+{% if post.id == page.id %}
+{% break %}
+{% endif %}
+{% assign next_post = post %}
+{% endif %}
+{% endfor %}
+
+
+{% if next_post or prev_post %}
+<nav class="post-pagination section-box">
+    {% if next_post %}
+    <div class="post-next">
+        <div class="post-tag">
+            {{ site.data.translations[include.post.lang].older }}
+        </div>
+        <h3 class="post-title">
+            <a href="{{ next_post.url }}">{{ next_post.title }}</a>
+        </h3>
+        {% include {{ next_post.layout | append:"/info.html" }} post=next_post  %}
+    </div>
+    {% endif %}
+    {% if prev_post %}
+    <div class="post-prev">
+        <div class="post-tag">
+            {{ site.data.translations[include.post.lang].newer }}
+        </div>
+        <h3 class="post-title">
+            <a href="{{ prev_post.url }}">{{ prev_post.title }}</a>
+        </h3>
+        {% include {{ prev_post.layout | append:"/info.html" }} post=prev_post  %}
+    </div>
+    {% endif %}
+</nav>
+{% endif %}

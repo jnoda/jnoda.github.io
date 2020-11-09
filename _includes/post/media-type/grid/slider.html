@@ -1,0 +1,9 @@
+<ul class="post-slider">
+    {% for image in include.post.media.thumbnails %}
+    <li><img src="{{ image }}" alt="{{ include.post.title }}"></li>
+    {% endfor %}
+</ul>
+<div class="post-slider-arrows">
+    <div class="slider-prev"></div>
+    <div class="slider-next"></div>
+</div>
