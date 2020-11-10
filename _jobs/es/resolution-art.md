@@ -1,15 +1,14 @@
 ---
-layout: job
 title: Resolution Art Inc.
 lang: es
 lang_ref: resolution-art
-category: jobs
+permalink: /es/jobs/resolution-art
 
 company: Resolution Art Inc.
 company_logo: 
 company_link: 
 position: Arquitecto de Software / Desarrollador Java
-from_date: 2012/08/01
+date: 2012/08/01
 to_date: 2014/09/31
 location: Madrid, España
 ---

@@ -18,14 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Julio Noda
-email: julio.noda@gmail.com
+title: "Julio Noda"
+email: "julio.noda@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
   Arquitecto, analista y desarrollador para entorno Java, con más de 15 años de experiencia
   desarrollando software, principalmente creando aplicaciones web a la medida.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jnoda.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: /:categories/:year/:title:output_ext
 excerpt_separator: <!--more-->
 
 # Build settings
@@ -51,15 +50,42 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Collections
+collections:
+  education:
+    output: true
+  jobs:
+    output: true
+  projects:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "education"
+    values:
+      layout: "education"
+  - scope:
+      path: ""
+      type: "jobs"
+    values:
+      layout: "job"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
 # Custom
-author: Julio Noda
+author: "Julio Noda"
 skin:
-  style: cyan
-  color: 07aaf5
-  type: light
+  style: "cyan"
+  color: "07aaf5"
+  type: "light"
 social:
-  linkedin: https://www.linkedin.com/in/julionoda
-  twitter: https://twitter.com/julionoda
-  instagram: https://www.instagram.com/julio.noda
-  facebook: https://www.facebook.com/julio.noda
-  github: https://github.com/jnoda
+  linkedin: "https://www.linkedin.com/in/julionoda"
+  twitter: "https://twitter.com/julionoda"
+  instagram: "https://www.instagram.com/julio.noda"
+  facebook: "https://www.facebook.com/julio.noda"
+  github: "https://github.com/jnoda"

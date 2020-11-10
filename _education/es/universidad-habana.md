@@ -1,9 +1,8 @@
 ---
-layout: education
 title: Licenciatura, Ciencias de la Computación 
 lang: es
 lang_ref: universidad-habana
-category: education
+permalink: /es/education/universidad-habana
 
 school: Universidad de La Habana
 degree: Licenciatura

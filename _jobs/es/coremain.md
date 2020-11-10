@@ -1,15 +1,14 @@
 ---
-layout: job
 title: Coremain Caribe S.L.
 lang: es
 lang_ref: coremain
-category: jobs
+permalink: /es/jobs/coremain
 
 company: Coremain Caribe S.L.
 company_logo: logo-coremain.png
 company_link: http://coremain.com
 position: Jefe de Proyectos / Arquitecto de Software / Desarrollador Java
-from_date: 2007/5/1
+date: 2007/5/1
 to_date: 2009/3/31
 location: La Habana, Cuba
 ---

@@ -1,15 +1,14 @@
 ---
-layout: job
 title: Gixcel Canada Inc.
 lang: es
 lang_ref: gixcel
-category: jobs
+permalink: /es/jobs/gixcel
 
 company: Gixcel Canada Inc.
 company_logo: 
 company_link: 
 position: Arquitecto de Software / Desarrollador Java
-from_date: 2010/01/20
+date: 2010/01/20
 to_date: 2012/06/30
 location: La Habana, Cuba
 ---

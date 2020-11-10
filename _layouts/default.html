@@ -44,7 +44,7 @@
     <script src="/assets/js/libs/modernizr.js"></script>
 
     {% if page.lang_ref %}
-    {% assign posts=site.posts | where: "lang_ref", page.lang_ref | sort: 'lang' %}
+    {% assign posts=site.documents | where: "lang_ref", page.lang_ref | sort: 'lang' %}
     {% if posts.size == 0 %}
     {% assign posts=site.pages | where:"lang_ref", page.lang_ref | sort: 'lang' %}
     {% endif %}
@@ -242,7 +242,7 @@ loading
     <script src="/assets/js/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
     <script src="/assets/js/plugins/imagesloaded.pkgd.min.js"></script>
     <script src="/assets/js/plugins/isotope.pkgd.min.js"></script>
-    <script src="/assets/js/plugins/jquery.appear.min.js"></script>>
+    <script src="/assets/js/plugins/jquery.appear.min.js"></script>
     <script src="/assets/js/plugins/jquery.onepagenav.min.js"></script>
     <script src="/assets/js/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
     <script src="/assets/js/plugins/jquery.customscroll/jquery.mCustomScrollbar.concat.min.js"></script>

@@ -1,15 +1,14 @@
 ---
-layout: job
 title: Resolution Art Inc.
 lang: en
 lang_ref: resolution-art
-category: jobs
+permalink: /en/jobs/resolution-art
 
 company: Resolution Art Inc.
 company_logo: 
 company_link: 
 position: Software Architect / Senior Java Developer
-from_date: 2012/08/01
+date: 2012/08/01
 to_date: 2014/09/31
 location: Madrid, Spain
 ---

@@ -4,7 +4,7 @@
         <i class="rsicon rsicon-location"></i>{{ include.post.location }}
     </span>
     <span>
-        <i class="rsicon rsicon-calendar"></i>{{ include.post.date | date: "%Y" }} -
+        <i class="rsicon rsicon-calendar"></i>{{ include.post.from_year }} -
         {% if include.post.to_year %}
         {{ include.post.to_year }}
         {% else %}

@@ -1,15 +1,14 @@
 ---
-layout: job
 title: Speexx
 lang: es
 lang_ref: speexx
-category: jobs
+permalink: /es/jobs/speexx
 
 company: Speexx
 company_logo: logo-speexx.png
 company_link: https://speexx.com
 position: Desarrollador Full-Stack Java
-from_date: 2018/08/20
+date: 2018/08/20
 to_date: 
 location: Madrid, España
 ---

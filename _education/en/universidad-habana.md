@@ -1,9 +1,8 @@
 ---
-layout: education
 title: Bachelor of Science (B.Sc.), Computer Science
 lang: en
 lang_ref: universidad-habana
-category: education
+permalink: /en/education/universidad-habana
 
 school: Universidad de La Habana
 degree: Bachelor of Science (B.Sc.)

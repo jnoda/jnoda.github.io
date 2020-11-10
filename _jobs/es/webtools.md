@@ -1,15 +1,14 @@
 ---
-layout: job
 title: Webtools S.L.
 lang: es
 lang_ref: webtools
-category: jobs
+permalink: /es/jobs/webtools
 
 company: Webtools S.L.
 company_logo: logo-webtools.png
 company_link: https://webtools.es
 position: Arquitecto / Desarrollador Java
-from_date: 2014/10/01
+date: 2014/10/01
 to_date: 2018/08/08
 location: Madrid, España
 ---

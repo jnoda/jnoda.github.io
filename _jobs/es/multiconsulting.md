@@ -1,17 +1,16 @@
 ---
-layout: job
 title: Multiconsulting S.A. de S.V.
-lang: en
+lang: es
 lang_ref: multiconsulting
-category: jobs
+permalink: /es/jobs/multiconsulting
 
 company: Multiconsulting S.A. de S.V.
 company_logo: logo-multiconsulting.png
-company_link: http://www.multiconsulting.com
-position: Developer / IT Consultant
-from_date: 2009/06/01
+_company_link: http://www.multiconsulting.com
+position: Desarrollador / Consultor
+date: 2009/06/01
 to_date: 2010/01/20
-location: Havana, Cuba
+location: La Habana, Cuba
 ---
 Garantizar el soporte técnico y personalización de las distintas implantaciones del ERP Sage MAS 500 a los clientes de la compañía. Específicamente:
 
