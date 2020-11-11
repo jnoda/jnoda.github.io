@@ -91,64 +91,9 @@ loading
     </div>
     <!-- .mobile-nav -->
 
-    <div class="sidebar sidebar-fixed">
-        <button class="btn-sidebar btn-sidebar-close">
-            <i class="rsicon rsicon-close"></i>
-        </button>
-
-        <div class="widget-area">
-            <aside class="widget widget-profile">
-                <div class="profile-photo">
-                    <img src="/assets/img/julio-noda-v2.jpg" alt="Julio Noda">
-                </div>
-                <div class="profile-info">
-                    <h2 class="profile-title">Julio Noda</h2>
-
-                    <h3 class="profile-position">{{ site.data.translations[page.lang].position }}</h3>
-                </div>
-            </aside>
-            <!-- .widget-profile -->
-
-            <aside class="widget widget_contact">
-                <h2 class="widget-title">{{ site.data.translations[page.lang].contact_form.header }}</h2>
-
-                <form class="rsForm" action="https://us-central1-julio-resume.cloudfunctions.net/sendMessage"
-                    method="post">
-                    <div class="input-field">
-                        <label>{{ site.data.translations[page.lang].contact_form.name }}</label>
-                        <input type="text" name="rsName" required>
-                        <span class="line"></span>
-                    </div>
-
-                    <div class="input-field">
-                        <label>{{ site.data.translations[page.lang].contact_form.email }}</label>
-                        <input type="email" name="rsEmail" required>
-                        <span class="line"></span>
-                    </div>
-
-                    <div class="input-field">
-                        <label>{{ site.data.translations[page.lang].contact_form.subject }}</label>
-                        <input type="text" name="rsSubject" required>
-                        <span class="line"></span>
-                    </div>
-
-                    <div class="input-field">
-                        <label>{{ site.data.translations[page.lang].contact_form.message }}</label>
-                        <textarea rows="4" name="rsMessage" required></textarea>
-                        <span class="line"></span>
-                    </div>
-
-                    <span class="btn-outer btn-primary-outer ripple">
-                        <input class="rsFormSubmit btn btn-lg btn-primary" type="submit"
-                            value="{{ site.data.translations[page.lang].contact_form.send }}">
-                    </span>
-                </form>
-            </aside>
-            <!-- .widget_contact -->
-        </div>
-        <!-- .widget-area -->
-    </div>
-    <!-- .sidebar -->
+    {% if page.fixed_sidebar or layout.fixed_sidebar %}
+    {% include sidebar.html type="fixed"%}
+    {% endif %}
 
     <div class="wrapper">
         <header class="header">
@@ -164,11 +109,13 @@ loading
                         </div>
 
                         <div class="col-lg-10 col-md-9 col-xs-6">
-                            <div class="head-cont clearfix">
+                            <div class="head-cont clearfix">                               
                                 <div class="head-items">
+                                    {% if page.fixed_sidebar or layout.fixed_sidebar %}
                                     <button class="btn-sidebar btn-sidebar-open">
                                         <i class="rsicon rsicon-menu"></i>
                                     </button>
+                                    {% endif %}
                                 </div>
                                 <button
                                     class="btn-mobile btn-mobile-nav">{{ site.data.translations[page.lang].menu }}</button>

@@ -1898,7 +1898,7 @@ img.aligncenter {
 }
 
 .styled-list li:before {
-    content: "\f00c";
+    content: "\e612";
     position: absolute;
     left: 0;
     top: 4px;

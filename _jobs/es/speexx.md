@@ -13,7 +13,7 @@ to_date:
 location: Madrid, España
 
 excerpt: |
-    * Reconstrucción de **aplicaciones** heredadas, con tecnologías y frameworks modernos.
+    * Reconstrucción de aplicaciones heredadas, con tecnologías y frameworks modernos.
     * Desarrollo de integraciones con soluciones de terceros (WeChat, Workable, Microsoft Teams, Microsoft Dynamics 365)
     * Investigación de opciones de integración con otras soluciones (Cornerstone OnDemand, SCIM with Azure AD, xAPI)
     * Definición de pautas de codificación y pruebas para el equipo de desarrollo.

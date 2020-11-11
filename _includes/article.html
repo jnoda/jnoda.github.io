@@ -1,5 +1,5 @@
 <div class="row animate-up">
-    <div class="col-sm-12">
+    <div class="col-sm-8">
         <main class="post-single">
             <article id="{{ include.post.layout }}-{{ include.post.slug }}" class="post-content section-box" itemscope
                 itemprop="blogPost">
@@ -41,5 +41,8 @@
             {% include post/nav.html post=include.post  %}
 
         </main>
+    </div>
+    <div class="col-sm-4">
+        {% include sidebar.html type="default"%}
     </div>
 </div>

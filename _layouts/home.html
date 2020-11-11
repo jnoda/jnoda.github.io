@@ -1,5 +1,6 @@
 ---
 layout: default
+fixed_sidebar: true
 ---
 
 <section id="about" class="section section-about">
@@ -9,7 +10,7 @@ layout: default
                 <div class="row">
                     <div class="col-sm-5">
                         <div class="profile-photo">
-                            <img src="/assets/img/julio-noda-v1.jpg" alt="Julio Noda">
+                            <img src="/assets/img/julio-noda.jpg" alt="Julio Noda">
                         </div>
                     </div>
                     <div class="col-sm-7">
@@ -164,7 +165,7 @@ layout: default
                                 {% endif %}
                             </div>
                             {% if post.company_link %}
-                            <a class="img" href="{{ post.company_link }}">
+                            <a class="img" href="{{ post.company_link }}" target="_blank">
                                 <img src="/assets/img/logos/{{ post.company_logo }}" alt="{{ post.company }}">
                             </a>
                             {% else %}
@@ -243,8 +244,7 @@ layout: default
                             <p>{{ reference[1].text}}</p>
                         </div>
                         <div class="person-info clearfix">
-                            <img src="/assets/img/{{ reference[1].photo }}" class="person-img"
-                                alt="{{ reference[1].name }}">
+                            <img src="/assets/img/{{ reference[1].photo }}" class="person-img" alt="{{ reference[1].name }}">
                             <div class="person-name-title">
                                 <span class="person-name">{{ reference[1].name }}</span>
                                 <span class="person-title">{{ reference[1].position }}</span>
