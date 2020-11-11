@@ -7,7 +7,10 @@ comment: Comentarios
 archive_a: Archivos
 archive_b: "Archivos: %s"
 page: Página %d
-recent_posts: Posts recientes
+recent_posts: Posts Recientes
+recent_jobs: Empleos Recientes
+recent_projects: Proyectos Recientes
+recent_education: Educación
 share: Compartir
 rss_feed: RSS
 category: Categoría

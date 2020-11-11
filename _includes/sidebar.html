@@ -12,17 +12,54 @@
             </div>
             <div class="profile-info">
                 <h2 class="profile-title">Julio Noda</h2>
-
                 <h3 class="profile-position">{{ site.data.translations[page.lang].position }}</h3>
             </div>
         </aside>
         <!-- .widget-profile -->
 
-        <aside class="widget widget_contact">
+        <aside class="widget widget_recent_entries">
+            <h2 class="widget-title">{{ site.data.translations[page.lang].recent_projects }}</h2>
+            <ul>
+                {% assign posts=site.projects | where:"lang", page.lang | reverse %}
+                {% for post in posts limit:6%}
+                <li>
+                    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </aside>
+        <!-- .widget_recent_entries -->
+
+        <aside class="widget widget_recent_entries">
+            <h2 class="widget-title">{{ site.data.translations[page.lang].recent_jobs }}</h2>
+            <ul>
+                {% assign posts=site.jobs | where:"lang", page.lang | reverse %}
+                {% for post in posts limit:5%}
+                <li>
+                    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.date | date: "%Y" }} - {{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </aside>
+        <!-- .widget_recent_entries -->
+
+        <aside class="widget widget_recent_entries">
+            <h2 class="widget-title">{{ site.data.translations[page.lang].recent_education }}</h2>
+            <ul>
+                {% assign posts=site.education | where:"lang", page.lang | reverse %}
+                {% for post in posts limit:5%}
+                <li>
+                    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </aside>
+        <!-- .widget_recent_entries -->
+
+        <aside class="widget widget-contact">
             <h2 class="widget-title">{{ site.data.translations[page.lang].contact_form.header }}</h2>
 
-            <form class="rsForm" action="https://us-central1-julio-resume.cloudfunctions.net/sendMessage"
-                method="post">
+            <form class="rsForm" action="https://us-central1-julio-resume.cloudfunctions.net/sendMessage" method="post">
                 <div class="input-field">
                     <label>{{ site.data.translations[page.lang].contact_form.name }}</label>
                     <input type="text" name="rsName" required>
@@ -53,7 +90,7 @@
                 </span>
             </form>
         </aside>
-        <!-- .widget_contact -->
+        <!-- .widget-contact -->
     </div>
     <!-- .widget-area -->
 </div>
