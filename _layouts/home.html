@@ -172,7 +172,7 @@ layout: default
                             {% endif %}
                             <h4>{{ post.position }}</h4>
                         </div>
-                        {{ post.excerpt }}
+                        {{ post.excerpt | markdownify }}
                     </div>
                 </div>
                 {% endfor %}
@@ -219,7 +219,7 @@ layout: default
                             <h3>{{ post.degree }}, {{ post.field }}</h3>
                             <h4>{{ post.school }}</h4>
                         </div>
-                        {{ post.excerpt }}
+                        {{ post.excerpt | markdownify }}
                     </div>
                 </div>
                 {% endfor %}
@@ -243,7 +243,8 @@ layout: default
                             <p>{{ reference[1].text}}</p>
                         </div>
                         <div class="person-info clearfix">
-                            <img src="/assets/img/{{ reference[1].photo }}" class="person-img" alt="{{ reference[1].name }}">
+                            <img src="/assets/img/{{ reference[1].photo }}" class="person-img"
+                                alt="{{ reference[1].name }}">
                             <div class="person-name-title">
                                 <span class="person-name">{{ reference[1].name }}</span>
                                 <span class="person-title">{{ reference[1].position }}</span>

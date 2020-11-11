@@ -2,7 +2,7 @@
 title: Speexx
 lang: es
 lang_ref: speexx
-permalink: /es/jobs/speexx
+permalink: /es/jobs/speexx/
 
 company: Speexx
 company_logo: logo-speexx.png
@@ -11,15 +11,14 @@ position: Desarrollador Full-Stack Java
 date: 2018/08/20
 to_date: 
 location: Madrid, España
+
+excerpt: |
+    * Reconstrucción de **aplicaciones** heredadas, con tecnologías y frameworks modernos.
+    * Desarrollo de integraciones con soluciones de terceros (WeChat, Workable, Microsoft Teams, Microsoft Dynamics 365)
+    * Investigación de opciones de integración con otras soluciones (Cornerstone OnDemand, SCIM with Azure AD, xAPI)
+    * Definición de pautas de codificación y pruebas para el equipo de desarrollo.
+    * Promoción de cambios en los procesos de desarrollo con DevOps, pruebas automáticas y herramientas de calidad.
 ---
-
-* Reconstrucción de aplicaciones heredadas, con tecnologías y frameworks modernos.
-* Desarrollo de integraciones con soluciones de terceros (WeChat, Workable, Microsoft Teams, Microsoft Dynamics 365)
-* Investigación de opciones de integración con otras soluciones (Cornerstone OnDemand, SCIM with Azure AD, xAPI)
-* Definición de pautas de codificación y pruebas para el equipo de desarrollo.
-* Promoción de cambios en los procesos de desarrollo con DevOps, pruebas automáticas y herramientas de calidad.
-
-<!--more-->
 
 [Speexx](https://speexx.com) ayuda a las grandes organizaciones a fomentar el talento de sus empleados mejorando sus habilidades de comunicación internacional. Speexx es fácil de usar y se adapta a las necesidades de usuarios y responsables de formación de todo tipo de organizaciones.
 
@@ -38,6 +37,7 @@ Speexx fue fundada en 2011 y tiene sedes en Múnich, Londres, Madrid, Milán, Pa
 * Promoción de cambios en los procesos de desarrollo con DevOps, pruebas automáticas y herramientas de calidad.
 
 ## Conocimientos del Sector
+
 * SCRUM
 * Test Driven Development
 

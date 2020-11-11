@@ -24,11 +24,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   Arquitecto, analista y desarrollador para entorno Java, con más de 15 años de experiencia
   desarrollando software, principalmente creando aplicaciones web a la medida.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jnoda.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-excerpt_separator: <!--more-->
+url: "https://www.julionoda.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 plugins:
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -61,21 +61,29 @@ collections:
 
 # Defaults
 defaults:
-  - scope:
+  - 
+    scope:
       path: ""
       type: "education"
     values:
       layout: "education"
-  - scope:
+  - 
+    scope:
       path: ""
       type: "jobs"
     values:
       layout: "job"
-  - scope:
+  - 
+    scope:
       path: ""
       type: "projects"
     values:
       layout: "project"
+  - 
+    scope:
+      path: "assets/**.pdf"
+    values:
+      sitemap: false
 
 # Custom
 author: "Julio Noda"

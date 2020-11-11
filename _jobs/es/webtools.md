@@ -2,7 +2,7 @@
 title: Webtools S.L.
 lang: es
 lang_ref: webtools
-permalink: /es/jobs/webtools
+permalink: /es/jobs/webtools/
 
 company: Webtools S.L.
 company_logo: logo-webtools.png
@@ -11,6 +11,7 @@ position: Arquitecto / Desarrollador Java
 date: 2014/10/01
 to_date: 2018/08/08
 location: Madrid, España
+
+excerpt: |
+    Diseño, desarrollo, mantenimiento y mejora de e-encuesta.com; una plataforma alojada en la nube para la realización de encuestas en línea, escalable y de alta disponibilidad. Formada por un conjunto de aplicaciones distribuidas creadas con un stack clásico de Java 8 (Spring, Hibernate, Maven, Thymeleaf, etc.) y soportadas por la infraestructura ofrecida por Amazon Web Services (Beanstalk, RDS, S3, Cloudfront, Cloudwatch).
 ---
-Diseño, desarrollo, mantenimiento y mejora de e-encuesta.com; una plataforma alojada en la nube para la realización de encuestas en línea, escalable y de alta disponibilidad. Formada por un conjunto de aplicaciones distribuidas creadas con un stack clásico de Java 8 (Spring, Hibernate, Maven, Thymeleaf, etc.) y soportadas por la infraestructura ofrecida por Amazon Web Services (Beanstalk, RDS, S3, Cloudfront, Cloudwatch).
-<!--more-->
