@@ -55,42 +55,6 @@
             </ul>
         </aside>
         <!-- .widget_recent_entries -->
-
-        <aside class="widget widget-contact">
-            <h2 class="widget-title">{{ site.data.translations[page.lang].contact_form.header }}</h2>
-
-            <form class="rsForm" action="https://us-central1-julio-resume.cloudfunctions.net/sendMessage" method="post">
-                <div class="input-field">
-                    <label>{{ site.data.translations[page.lang].contact_form.name }}</label>
-                    <input type="text" name="rsName" required>
-                    <span class="line"></span>
-                </div>
-
-                <div class="input-field">
-                    <label>{{ site.data.translations[page.lang].contact_form.email }}</label>
-                    <input type="email" name="rsEmail" required>
-                    <span class="line"></span>
-                </div>
-
-                <div class="input-field">
-                    <label>{{ site.data.translations[page.lang].contact_form.subject }}</label>
-                    <input type="text" name="rsSubject" required>
-                    <span class="line"></span>
-                </div>
-
-                <div class="input-field">
-                    <label>{{ site.data.translations[page.lang].contact_form.message }}</label>
-                    <textarea rows="4" name="rsMessage" required></textarea>
-                    <span class="line"></span>
-                </div>
-
-                <span class="btn-outer btn-primary-outer ripple">
-                    <input class="rsFormSubmit btn btn-lg btn-primary" type="submit"
-                        value="{{ site.data.translations[page.lang].contact_form.send }}">
-                </span>
-            </form>
-        </aside>
-        <!-- .widget-contact -->
     </div>
     <!-- .widget-area -->
 </div>

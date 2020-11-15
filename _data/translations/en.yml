@@ -102,14 +102,4 @@ hello_page:
       icon: rsicon-music
     videogames:
       text: Videogames
-      icon: rsicon-gamepad
-  contact:
-    title: Contact Me
-    text: Feel free to contact me
-contact_form:
-  header: Contact Me
-  name: Name
-  email: Email
-  subject: Subject
-  message: Message
-  send: Send   
+      icon: rsicon-gamepad 

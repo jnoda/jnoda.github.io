@@ -102,14 +102,4 @@ hello_page:
       icon: rsicon-music
     videogames:
       text: Videojuegos
-      icon: rsicon-gamepad
-  contact:
-    title: Contacto
-    text: Contáctame si quieres
-contact_form:
-  header: Contáctame
-  name: Nombre
-  email: Correo
-  subject: Asunto
-  message: Mensaje
-  send: Enviar  
+      icon: rsicon-gamepad 
