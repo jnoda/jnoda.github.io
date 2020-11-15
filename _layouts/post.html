@@ -1,5 +1,57 @@
 ---
 layout: default
 ---
+<div class="row animate-up">
+    <div class="col-sm-8">
+        <main class="post-single">
+            <article id="{{ page.collection }}-{{ page.slug }}" class="post-content section-box" itemscope
+                itemprop="blogPost">
 
-{% include article.html post=page %}
+                {% if page.media.type %}
+                <div class="post-media">
+                    {% include {{ page.media.type | append:".html" | prepend:"common/media-type/single/" }} post=page  %}
+                </div>
+                {% endif %}
+
+                <div class="post-inner">
+                    <header class="post-header">
+                        <div class="post-data">
+
+                            <div class="post-tag">
+                                {% include common/tag.html post=page %}
+                            </div>
+
+                            <div class="post-title-wrap">
+                                <h1 class="post-title" itemprop="name">
+                                    {% if page.media.logo %}
+                                    <img src="/assets/posts/{{ page.media.logo }}" alt="{{ page.title }}">
+                                    {% else %}
+                                    {{ page.title }}
+                                    {% endif %}
+                                </h1>
+                                {% include {{ page.collection | append:"/date.html" }} post=page  %}
+                            </div>
+
+                            {% include {{ page.collection | append:"/info.html" }} post=page  %}
+
+                        </div>
+                    </header>
+
+                    <div class="post-editor clearfix" itemprop="articleBody">
+                        {{ page.content }}
+                    </div>
+
+                    <footer class="post-footer">
+                        <!-- share actions -->
+                    </footer>
+                </div>
+            </article>
+
+            {% include common/nav.html post=page  %}
+
+        </main>
+    </div>
+    <div class="col-sm-4">
+        {% include sidebar.html type="default"%}
+    </div>
+</div>

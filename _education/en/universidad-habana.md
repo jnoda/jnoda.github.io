@@ -14,4 +14,5 @@ location: Havana, Cuba
 excerpt: |
     Courses covering topics on software development, mathematics and applied mathematics. Several awards on Scientific Sessions organized by the faculty. Contributions for the Metaheuristics’ Research Team on genetic algorithms. Grade work on a Human Resources System for CIMEX S.A. corporation.
 ---
-Grupo de Investigación de Metaheurísticas
+    
+Courses covering topics on software development, mathematics and applied mathematics. Several awards on Scientific Sessions organized by the faculty. Contributions for the Metaheuristics’ Research Team on genetic algorithms. Grade work on a Human Resources System for CIMEX S.A. corporation.

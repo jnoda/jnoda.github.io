@@ -14,6 +14,13 @@ location: Havana, Cuba
 
 excerpt: |
     Designed, developed and maintained the support infrastructure for Gixcel Canada Inc. (previously ArteSol Services); a company specialized on the digitization in ultra-high definition and printing of two dimensional works of art. Specifically, this infrastructure is formed by:
-    * A corporate website, a virtual store and a portal that targets enthusiasts and professionals of visual arts. Developed as a personalization of Liferay Portal using Java, Spring, Hibernate, AndroMDA, MySQL y Struts 2; supported by the hosting and storage services provided by Amazon.
-    * A group of systems and internal modules for production support developed using Java, Spring, Hibernate, CXF, AndroMDA, MySQL y Struts 2; running in Apache Tomcat server on Linux.
+    - A corporate website, a virtual store and a portal that targets enthusiasts and professionals of visual arts. Developed as a personalization of Liferay Portal using Java, Spring, Hibernate, AndroMDA, MySQL y Struts 2; supported by the hosting and storage services provided by Amazon.
+    - A group of systems and internal modules for production support developed using Java, Spring, Hibernate, CXF, AndroMDA, MySQL y Struts 2; running in Apache Tomcat server on Linux.
 ---
+
+## Responsibilities
+
+Designed, developed and maintained the support infrastructure for Gixcel Canada Inc. (previously ArteSol Services); a company specialized on the digitization in ultra-high definition and printing of two dimensional works of art. Specifically, this infrastructure is formed by:
+
+- A corporate website, a virtual store and a portal that targets enthusiasts and professionals of visual arts. Developed as a personalization of Liferay Portal using Java, Spring, Hibernate, AndroMDA, MySQL y Struts 2; supported by the hosting and storage services provided by Amazon.
+- A group of systems and internal modules for production support developed using Java, Spring, Hibernate, CXF, AndroMDA, MySQL y Struts 2; running in Apache Tomcat server on Linux.

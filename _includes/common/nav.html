@@ -1,4 +1,6 @@
-{% for post in site.posts %}
+{% assign collection = site.collections | where: "label", include.post.collection | first %}
+
+{% for post in collection.docs reversed %}
 {% if post.lang == page.lang %}
 {% if post.id == page.id %}
 {% break %}
@@ -7,7 +9,7 @@
 {% endif %}
 {% endfor %}
 
-{% for post in site.posts reversed %}
+{% for post in collection.docs %}
 {% if post.lang == page.lang %}
 {% if post.id == page.id %}
 {% break %}
@@ -16,29 +18,28 @@
 {% endif %}
 {% endfor %}
 
-
 {% if next_post or prev_post %}
 <nav class="post-pagination section-box">
     {% if next_post %}
     <div class="post-next">
         <div class="post-tag">
-            {{ site.data.translations[include.post.lang].older }}
+            {{ site.data.translations[include.post.lang].previous }}
         </div>
         <h3 class="post-title">
             <a href="{{ next_post.url }}">{{ next_post.title }}</a>
         </h3>
-        {% include {{ next_post.layout | append:"/info.html" }} post=next_post  %}
+        {% include {{ next_post.collection | append:"/info.html" }} post=next_post  %}
     </div>
     {% endif %}
     {% if prev_post %}
     <div class="post-prev">
         <div class="post-tag">
-            {{ site.data.translations[include.post.lang].newer }}
+            {{ site.data.translations[include.post.lang].next }}
         </div>
         <h3 class="post-title">
             <a href="{{ prev_post.url }}">{{ prev_post.title }}</a>
         </h3>
-        {% include {{ prev_post.layout | append:"/info.html" }} post=prev_post  %}
+        {% include {{ prev_post.collection | append:"/info.html" }} post=prev_post  %}
     </div>
     {% endif %}
 </nav>

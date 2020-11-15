@@ -164,16 +164,16 @@ fixed_sidebar: true
                                 {{ site.data.translations[page.lang].present }}
                                 {% endif %}
                             </div>
-                            {% if post.company_link %}
-                            <a class="img" href="{{ post.company_link }}" target="_blank">
-                                <img src="/assets/img/logos/{{ post.company_logo }}" alt="{{ post.company }}">
+                            {% if post.media.logo %}
+                            <a class="img" href="{{ post.url }}" title="{{ post.title }}">
+                                <img src="/assets/posts/{{ post.media.logo }}" alt="{{ post.title }}">
                             </a>
                             {% else %}
-                            <h3>{{ post.company | upcase }}</h3>
+                            <h3>{{ post.title | upcase }}</h3>
                             {% endif %}
                             <h4>{{ post.position }}</h4>
                         </div>
-                        {{ post.excerpt | markdownify }}
+                        {{ post.excerpt | append: " [[...]](" | append: post.url | append: ")" | markdownify }}
                     </div>
                 </div>
                 {% endfor %}
@@ -181,11 +181,9 @@ fixed_sidebar: true
             </div>
         </div>
     </div>
-    <div class="pf-grid-more text-center">
-        <span class="ajax-loader"></span>
-        <button class="btn btn-border ripple">
-            <i class="rsicon rsicon-add"></i>
-        </button>
+    <div class="section-txt-btn">
+        <a class="btn btn-lg btn-default ripple"
+            href="/{{ page.lang}}/jobs/">{{ site.data.translations[page.lang].see_more }}</a>
     </div>
 </section>
 <!-- #experience -->
@@ -218,9 +216,9 @@ fixed_sidebar: true
                                 </span>
                             </div>
                             <h3>{{ post.degree }}, {{ post.field }}</h3>
-                            <h4>{{ post.school }}</h4>
+                            <h4><a href="{{ post.url }}" title="{{ post.school }}">{{ post.school }}</a></h4>
                         </div>
-                        {{ post.excerpt | markdownify }}
+                        {{ post.excerpt | append: "[[...]](" | append: post.url | append: ")" | markdownify }}
                     </div>
                 </div>
                 {% endfor %}
@@ -244,7 +242,8 @@ fixed_sidebar: true
                             <p>{{ reference[1].text}}</p>
                         </div>
                         <div class="person-info clearfix">
-                            <img src="/assets/img/{{ reference[1].photo }}" class="person-img" alt="{{ reference[1].name }}">
+                            <img src="/assets/img/{{ reference[1].photo }}" class="person-img"
+                                alt="{{ reference[1].name }}">
                             <div class="person-name-title">
                                 <span class="person-name">{{ reference[1].name }}</span>
                                 <span class="person-title">{{ reference[1].position }}</span>

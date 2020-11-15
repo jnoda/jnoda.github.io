@@ -66,19 +66,19 @@ defaults:
       path: ""
       type: "education"
     values:
-      layout: "education"
+      layout: "post"
   - 
     scope:
       path: ""
       type: "jobs"
     values:
-      layout: "job"
+      layout: "post"
   - 
     scope:
       path: ""
       type: "projects"
     values:
-      layout: "project"
+      layout: "post"
   - 
     scope:
       path: "assets/**.pdf"

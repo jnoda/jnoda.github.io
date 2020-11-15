@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="blog">
+    <div class="blog-grid">
+        <div class="grid-sizer"></div>
+
+        {% assign collection = site.collections | where: "label", page.collection | first %}
+        {% assign posts=collection.docs | where:"lang", page.lang | reverse %}
+        {% for post in posts %}
+        <div class="grid-item animate-up">
+            <article class="post-box">
+
+                {% if post.media.type %}
+                <div class="post-media">
+                    {% include {{ post.media.type | append:".html" | prepend:"common/media-type/grid/" }} post=post  %}
+                </div>
+                {% endif %}
+
+                <div class="post-data">
+                    {% include {{ post.collection | append:"/date.html" }} post=post  %}
+
+                    <div class="post-tag">
+                        {% include common/tag.html post=post %}
+                    </div>
+
+                    <h3 class="post-title">
+                        <a href="{{ post.url }}">
+                            {% if post.media.logo %}
+                            <img src="/assets/posts/{{ post.media.logo }}" alt="{{ post.title }}">
+                            {% else %}
+                            {{ post.title }}
+                            {% endif %}
+                        </a>
+                    </h3>
+
+                    {% include {{ post.collection | append:"/info.html" }} post=post  %}
+
+                </div>
+            </article>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="pagination animate-up">
+    </div>
+</div>
