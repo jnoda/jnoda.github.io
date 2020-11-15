@@ -164,13 +164,13 @@ fixed_sidebar: true
                                 {{ site.data.translations[page.lang].present }}
                                 {% endif %}
                             </div>
-                            {% if post.media.logo %}
                             <a class="img" href="{{ post.url }}" title="{{ post.title }}">
+                                {% if post.media.logo %}
                                 <img src="/assets/posts/{{ post.media.logo }}" alt="{{ post.title }}">
+                                {% else %}
+                                <h3>{{ post.title | upcase }}</h3>
+                                {% endif %}
                             </a>
-                            {% else %}
-                            <h3>{{ post.title | upcase }}</h3>
-                            {% endif %}
                             <h4>{{ post.position }}</h4>
                         </div>
                         {{ post.excerpt | append: " [[...]](" | append: post.url | append: ")" | markdownify }}
