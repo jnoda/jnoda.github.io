@@ -7324,6 +7324,11 @@ body {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .post-editor {
+        margin-left: -24px;
+        margin-right: -24px;
+    }
 }
 
 /**
