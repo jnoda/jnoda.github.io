@@ -17,14 +17,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-title: "Julio Noda"
-email: "julio.noda@gmail.com"
-description: >- # this means to ignore newlines until "baseurl:"
-  Arquitecto, analista y desarrollador para entorno Java, con más de 15 años de experiencia
-  desarrollando software, principalmente creando aplicaciones web a la medida.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.julionoda.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 plugins:
@@ -49,6 +42,22 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# SEO
+title: "Julio Noda"
+author: "Julio Noda"
+description: Arquitecto de Software y Desarrollador Java
+url: "https://www.julionoda.com/"
+twitter:
+  username: julionoda
+  card: summary
+social:
+  links:
+    - https://twitter.com/JulioNoda
+    - https://www.facebook.com/julio.noda
+    - https://www.linkedin.com/in/JulioNoda
+    - https://github.com/jnoda
+    - https://www.instagram.com/julio.noda
 
 # Collections
 collections:
@@ -86,12 +95,11 @@ defaults:
       sitemap: false
 
 # Custom
-author: "Julio Noda"
 skin:
   style: "cyan"
   color: "07aaf5"
   type: "light"
-social:
+social_list:
   linkedin: "https://www.linkedin.com/in/julionoda"
   github: "https://github.com/jnoda"
   twitter: "https://twitter.com/julionoda"

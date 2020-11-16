@@ -9,13 +9,7 @@
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-    <title>
-        {% if page.layout == "home" %}
-        {{ site.title }} &middot; {{ site.data.translations[page.lang].position }}
-        {% else %}
-        {{ page.title }} &middot; {{ site.title }}
-        {% endif %}
-    </title>
+    {% seo %}
 
     <!-- Icons -->
     <link rel="shortcut icon" type="image/ico" href="/assets/favicon.png">
@@ -152,7 +146,7 @@ loading
         <footer class="footer">
             <div class="footer-social">
                 <ul class="social">
-                    {% for social in site.social %}
+                    {% for social in site.social_list %}
                     <li>
                         <a class="ripple-centered" href="{{ social[1] }}" target="_blank">
                             <i class="rsicon rsicon-{{ social[0] }}"></i>
