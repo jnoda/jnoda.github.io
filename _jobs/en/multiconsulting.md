@@ -5,8 +5,8 @@ lang_ref: multiconsulting
 permalink: /en/jobs/multiconsulting/
 
 position: Developer / IT Consultant
-date: 2009/06/01
-to_date: 2010/01/20
+date: 2009-06-01
+to_date: 2010-01-20
 location: Havana, Cuba
 
 media:

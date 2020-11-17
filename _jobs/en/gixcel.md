@@ -8,8 +8,8 @@ company: Gixcel Canada Inc.
 company_logo: 
 company_link: 
 position: Software Architect / Senior Java Developer
-date: 2010/01/20
-to_date: 2012/06/30
+date: 2010-01-20
+to_date: 2012-06-30
 location: Havana, Cuba
 
 excerpt: |

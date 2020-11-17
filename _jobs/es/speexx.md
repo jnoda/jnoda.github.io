@@ -5,7 +5,7 @@ lang_ref: speexx
 permalink: /es/jobs/speexx/
 
 position: Desarrollador Full-Stack Java
-date: 2018/08/20
+date: 2018-08-20
 to_date: 
 location: Madrid, España
 

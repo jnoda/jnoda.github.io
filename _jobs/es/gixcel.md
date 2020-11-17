@@ -5,8 +5,8 @@ lang_ref: gixcel
 permalink: /es/jobs/gixcel/
 
 position: Arquitecto de Software / Desarrollador Java
-date: 2010/01/20
-to_date: 2012/06/30
+date: 2010-01-20
+to_date: 2012-06-30
 location: La Habana, Cuba
 
 excerpt: |

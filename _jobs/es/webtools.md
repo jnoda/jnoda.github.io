@@ -5,8 +5,8 @@ lang_ref: webtools
 permalink: /es/jobs/webtools/
 
 position: Arquitecto / Desarrollador Java
-date: 2014/10/01
-to_date: 2018/08/08
+date: 2014-10-01
+to_date: 2018-08-08
 location: Madrid, España
 
 media:

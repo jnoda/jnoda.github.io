@@ -5,8 +5,8 @@ lang_ref: resolution-art
 permalink: /en/jobs/resolution-art/
 
 position: Software Architect / Senior Java Developer
-date: 2012/08/01
-to_date: 2014/09/31
+date: 2012-08-01
+to_date: 2014-09-31
 location: Madrid, Spain
 
 media:

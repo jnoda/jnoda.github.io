@@ -5,8 +5,8 @@ lang_ref: resolution-art
 permalink: /es/jobs/resolution-art/
 
 position: Arquitecto de Software / Desarrollador Java
-date: 2012/08/01
-to_date: 2014/09/31
+date: 2012-08-01
+to_date: 2014-09-31
 location: Madrid, España
 
 media:

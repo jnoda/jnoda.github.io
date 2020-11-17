@@ -5,8 +5,8 @@ lang_ref: coremain
 permalink: /es/jobs/coremain/
 
 position: Jefe de Proyectos / Arquitecto de Software / Desarrollador Java
-date: 2007/5/1
-to_date: 2009/3/31
+date: 2007-05-01
+to_date: 2009-03-31
 location: La Habana, Cuba
 
 media:
