@@ -26,7 +26,7 @@ Las principales marcas del mercado internacional y 1500 organizaciones de todo e
 
 Speexx fue fundada en 2011 y tiene sedes en Múnich, Londres, Madrid, Milán, París, São Paulo y Shanghái.
 
----
+***
 
 ## Responsabilidades
 
@@ -35,3 +35,56 @@ Speexx fue fundada en 2011 y tiene sedes en Múnich, Londres, Madrid, Milán, Pa
 - Investigación de opciones de integración con otras soluciones (Cornerstone OnDemand, SCIM with Azure AD, xAPI)
 - Definición de pautas de codificación y pruebas para el equipo de desarrollo.
 - Promoción de cambios en los procesos de desarrollo con DevOps, pruebas automáticas y herramientas de calidad.
+
+***
+
+## Competencias
+
+### Frameworks y Tecnologías
+
+- Java 8
+- Maven
+- Spring
+    - Boot
+    - Data
+    - Framework
+    - Security
+- EclipseLink
+- HTML/HTML5
+- CSS/CSS3
+- JavaScript
+- JUnit 5
+- Cucumber
+- Liquibase
+- Vaadin
+{: class="styled-list"}
+
+### Servicios y Herramientas 
+
+- IntelliJ IDEA
+- Atlassian Suite
+    - Jira
+    - Confluence
+    - Bitbucket (+ Pipelines)
+- Git
+- Microsoft Azure
+{: class="styled-list"}
+
+### Servidores y Plataformas
+
+- Firebird
+- Tomcat
+- Linux (Ubuntu)
+- Windows Server
+{: class="styled-list"}
+
+### Conocimientos del Sector
+
+- Metodologías Ágiles (SCRUM)
+- Diseño de Software
+- Aplicaciones Web
+- Desarrollo guiado por pruebas
+- Desarrollo guiado por comportamiento
+- Integraciones
+- DevOps
+{: class="styled-list"}
