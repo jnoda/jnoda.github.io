@@ -14,8 +14,8 @@ media:
 
 excerpt: |
     - Reworked legacy applications, with modern frameworks and technologies.
-    - Developed integrations with third-party solutions (WeChat, Workable, Microsoft Teams, Microsoft Dynamics 365)
-    - Researched integration path to other solutions (Cornerstone OnDemand, SCIM with Azure AD, xAPI)
+    - Developed integrations with third-party solutions
+    - Researched integration path to other solutions
     - Defined coding and testing guidelines for the development team.
     - Promoted changes to development processes with DevOps, automatic testing and quality tools.
 ---

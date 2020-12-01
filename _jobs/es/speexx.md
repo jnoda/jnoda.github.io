@@ -14,8 +14,8 @@ media:
 
 excerpt: |
     - Reconstrucción de aplicaciones heredadas, con tecnologías y frameworks modernos.
-    - Desarrollo de integraciones con soluciones de terceros (WeChat, Workable, Microsoft Teams, Microsoft Dynamics 365)
-    - Investigación de opciones de integración con otras soluciones (Cornerstone OnDemand, SCIM with Azure AD, xAPI)
+    - Desarrollo de integraciones con soluciones de terceros
+    - Investigación de opciones de integración con otras soluciones
     - Definición de pautas de codificación y pruebas para el equipo de desarrollo.
     - Promoción de cambios en los procesos de desarrollo con DevOps, pruebas automáticas y herramientas de calidad.
 ---
@@ -38,7 +38,7 @@ Speexx fue fundada en 2011 y tiene sedes en Múnich, Londres, Madrid, Milán, Pa
 
 ***
 
-## Competencias
+## Habilidades
 
 ### Frameworks y Tecnologías
 
