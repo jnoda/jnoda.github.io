@@ -18,6 +18,8 @@ excerpt: |
     - A group of systems and internal modules for production support developed using Java, Spring, Hibernate, CXF, AndroMDA, MySQL y Struts 2; running in Apache Tomcat server on Linux.
 ---
 
+***
+
 ## Responsibilities
 
 Designed, developed and maintained the support infrastructure for Gixcel Canada Inc. (previously ArteSol Services); a company specialized on the digitization in ultra-high definition and printing of two dimensional works of art. Specifically, this infrastructure is formed by:

@@ -37,9 +37,6 @@ menu_list:
   experience:    
     name: Experience
     url: '/en/#experience'
-  contact:
-    name: Contact
-    url: '/en/#contact'
   lang:
     name: Español
     url: '/es/'
@@ -64,7 +61,7 @@ hello_page:
       title: <span class="button">Experience</span>
       value: +15 years
   download_resume: Download resume
-  headline: Hello! I’m Julio Noda. Java architect, analyst and developer, with more than 15 years of experience making software, mostly building custom web applications. With great teamwork abilities, assuming tasks with initiative and autonomy. I have excellent aptitudes for finding technological solutions.
+  headline: Hello! I’m Julio Noda. Java architect, analyst and developer, with more than 15 years of experience making software, mostly building web applications and services. With great teamwork abilities, assuming tasks with initiative and autonomy. I have excellent aptitudes for finding technological solutions.
   languages:
     title: Languages
     spanish:

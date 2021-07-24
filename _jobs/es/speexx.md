@@ -13,11 +13,11 @@ media:
     logo: logo-speexx.png
 
 excerpt: |
+    - Diseño y desarrollo de múltiples proyectos usando microservicios Spring Boot.
     - Reconstrucción de aplicaciones heredadas, con tecnologías y frameworks modernos.
-    - Desarrollo de integraciones con soluciones de terceros
-    - Investigación de opciones de integración con otras soluciones
-    - Definición de pautas de codificación y pruebas para el equipo de desarrollo.
     - Promoción de cambios en los procesos de desarrollo con DevOps, pruebas automáticas y herramientas de calidad.
+    - Desarrollo de integraciones con soluciones de terceros.
+    - Definición de pautas de codificación y pruebas para el equipo de desarrollo.
 ---
 
 [Speexx](https://www.speexx.com){:target="_blank" rel="noopener"} ayuda a las grandes organizaciones a fomentar el talento de sus empleados mejorando sus habilidades de comunicación internacional. Speexx es fácil de usar y se adapta a las necesidades de usuarios y responsables de formación de todo tipo de organizaciones.
@@ -30,11 +30,17 @@ Speexx fue fundada en 2011 y tiene sedes en Múnich, Londres, Madrid, Milán, Pa
 
 ## Responsabilidades
 
+- Diseño y desarrollo de múltiples proyectos usando microservicios Spring Boot, con Spring Cloud y EclipseLink.
 - Reconstrucción de aplicaciones heredadas, con tecnologías y frameworks modernos.
-- Desarrollo de integraciones con soluciones de terceros (WeChat, Workable, Microsoft Teams, Microsoft Dynamics 365)
-- Investigación de opciones de integración con otras soluciones (Cornerstone OnDemand, SCIM with Azure AD, xAPI)
-- Definición de pautas de codificación y pruebas para el equipo de desarrollo.
 - Promoción de cambios en los procesos de desarrollo con DevOps, pruebas automáticas y herramientas de calidad.
+- Desarrollo de integraciones con soluciones de terceros
+    - [WeChat](https://www.wechat.com/){:target="_blank" rel="noopener"}
+    - [Workable](https://www.workable.com/){:target="_blank" rel="noopener"}
+    - [Microsoft Teams](https://www.microsoft.com/en-ww/microsoft-teams/){:target="_blank" rel="noopener"}
+    - [Microsoft Dynamics 365](https://dynamics.microsoft.com/){:target="_blank" rel="noopener"}
+    - [Cornerstone OnDemand](https://www.cornerstoneondemand.com/){:target="_blank" rel="noopener"}
+    - [SAP SuccessFactors](https://www.sap.com/products/human-resources-hcm.html){:target="_blank" rel="noopener"}
+- Definición de pautas de codificación y pruebas para el equipo de desarrollo.
 
 ***
 
@@ -46,6 +52,10 @@ Speexx fue fundada en 2011 y tiene sedes en Múnich, Londres, Madrid, Milán, Pa
 - Maven
 - Spring
     - Boot
+    - Cloud
+        - Config
+        - Gateway
+        - OpenFeign
     - Data
     - Framework
     - Security
@@ -81,8 +91,10 @@ Speexx fue fundada en 2011 y tiene sedes en Múnich, Londres, Madrid, Milán, Pa
 ### Conocimientos del Sector
 
 - Metodologías Ágiles (SCRUM)
+- Arquitectura de Software
 - Diseño de Software
 - Aplicaciones Web
+- REST APIs
 - Desarrollo guiado por pruebas
 - Desarrollo guiado por comportamiento
 - Integraciones

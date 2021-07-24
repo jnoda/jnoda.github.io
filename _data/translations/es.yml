@@ -37,9 +37,6 @@ menu_list:
   experience:
     name: Experiencia
     url: '/es/#experience'
-  contact:
-    name: Contacto
-    url: '/es/#contact'
   lang:
     name: English
     url: '/en/'
@@ -64,7 +61,7 @@ hello_page:
       title: <span class="button">Experiencia</span>
       value: +15 años
   download_resume: Descargar CV
-  headline: ¡Hola! Soy Julio Noda. Arquitecto, analista y desarrollador para entorno Java, con más de 15 años de experiencia desarrollando software, principalmente creando aplicaciones web a la medida. Con gran capacidad de trabajo en grupo, además de iniciativa y autonomía en el desempeño de tareas. Dispongo de una excelente aptitud para la búsqueda de soluciones tecnológicas.
+  headline: ¡Hola! Soy Julio Noda. Arquitecto, analista y desarrollador para entorno Java, con más de 15 años de experiencia desarrollando software, principalmente creando aplicaciones y servicios web. Con gran capacidad de trabajo en grupo, además de iniciativa y autonomía en el desempeño de tareas. Dispongo de una excelente aptitud para la búsqueda de soluciones tecnológicas.
   languages:
     title: Idiomas
     spanish: 

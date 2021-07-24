@@ -13,11 +13,11 @@ media:
     logo: logo-speexx.png
 
 excerpt: |
+    - Designed and developed multiple projects as Spring Boot microservices.
     - Reworked legacy applications, with modern frameworks and technologies.
-    - Developed integrations with third-party solutions
-    - Researched integration path to other solutions
-    - Defined coding and testing guidelines for the development team.
     - Promoted changes to development processes with DevOps, automatic testing and quality tools.
+    - Developed integrations with third-party solutions.
+    - Defined coding and testing guidelines for the development team.
 ---
 
 [Speexx](https://www.speexx.com){:target="_blank" rel="noopener"} is a leading provider of award-winning cloud-based online language training and testing solutions for a global workplace. We help large organizations everywhere drive productivity by empowering employee communication skills across borders.
@@ -30,11 +30,17 @@ Speexx was founded in 2011 and is headquartered in Munich with offices in London
 
 ## Responsibilities
 
+- Designed and developed multiple projects as Spring Boot microservices, with Spring Cloud and EclipseLink.
 - Reworked legacy applications, with modern frameworks and technologies.
-- Developed integrations with third-party solutions (WeChat, Workable, Microsoft Teams, Microsoft Dynamics 365)
-- Researched integration path to other solutions (Cornerstone OnDemand, SCIM with Azure AD, xAPI)
-- Defined coding and testing guidelines for the development team.
 - Promoted changes to development processes with DevOps, automatic testing and quality tools.
+- Developed integrations with third-party solutions
+    - [WeChat](https://www.wechat.com/){:target="_blank" rel="noopener"}
+    - [Workable](https://www.workable.com/){:target="_blank" rel="noopener"}
+    - [Microsoft Teams](https://www.microsoft.com/en-ww/microsoft-teams/){:target="_blank" rel="noopener"}
+    - [Microsoft Dynamics 365](https://dynamics.microsoft.com/){:target="_blank" rel="noopener"}
+    - [Cornerstone OnDemand](https://www.cornerstoneondemand.com/){:target="_blank" rel="noopener"}
+    - [SAP SuccessFactors](https://www.sap.com/products/human-resources-hcm.html){:target="_blank" rel="noopener"}
+- Defined coding and testing guidelines for the development team.
 
 ***
 
@@ -46,6 +52,10 @@ Speexx was founded in 2011 and is headquartered in Munich with offices in London
 - Maven
 - Spring
     - Boot
+    - Cloud
+        - Config
+        - Gateway
+        - OpenFeign
     - Data
     - Framework
     - Security
@@ -81,8 +91,10 @@ Speexx was founded in 2011 and is headquartered in Munich with offices in London
 ### Industry Knowledge
 
 - Agile Methodologies (SCRUM)
+- Software Architecture
 - Software Design
 - Web Applications
+- REST APIs
 - Test Driven Development
 - Behavior Driven Development
 - Integrations
