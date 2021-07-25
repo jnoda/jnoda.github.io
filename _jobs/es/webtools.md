@@ -64,7 +64,7 @@ Diseño, desarrollo, mantenimiento y mejora de **e-encuesta.com**; una plataform
     - CloudFront
     - CloudWatch
 - Wordpress
-{: class="styled-list"}
+{: class="styled-list styled-list-secondary"}
 
 ### Servidores y Plataformas
 
@@ -79,4 +79,4 @@ Diseño, desarrollo, mantenimiento y mejora de **e-encuesta.com**; una plataform
 - Diseño de Software
 - Desarrollo guiado por pruebas
 - Aplicaciones Web
-{: class="styled-list"}
+{: class="styled-list styled-list-secondary"}

@@ -67,6 +67,8 @@ Speexx fue fundada en 2011 y tiene sedes en Múnich, Londres, Madrid, Milán, Pa
 - Cucumber
 - Liquibase
 - Vaadin
+- Swagger
+- OAuth 2.0
 {: class="styled-list"}
 
 ### Servicios y Herramientas 
@@ -78,7 +80,7 @@ Speexx fue fundada en 2011 y tiene sedes en Múnich, Londres, Madrid, Milán, Pa
     - Bitbucket (+ Pipelines)
 - Git
 - Microsoft Azure
-{: class="styled-list"}
+{: class="styled-list styled-list-secondary"}
 
 ### Servidores y Plataformas
 
@@ -99,4 +101,4 @@ Speexx fue fundada en 2011 y tiene sedes en Múnich, Londres, Madrid, Milán, Pa
 - Desarrollo guiado por comportamiento
 - Integraciones
 - DevOps
-{: class="styled-list"}
+{: class="styled-list styled-list-secondary"}

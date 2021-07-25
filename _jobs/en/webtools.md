@@ -64,7 +64,7 @@ Designed, developed, maintained and improved **e-encuesta.com**; a platform host
     - CloudFront
     - CloudWatch
 - Wordpress
-{: class="styled-list"}
+{: class="styled-list styled-list-secondary"}
 
 ### Servers and Platforms
 
@@ -79,4 +79,4 @@ Designed, developed, maintained and improved **e-encuesta.com**; a platform host
 - Software Design
 - Test Driven Development
 - Web Applications
-{: class="styled-list"}
+{: class="styled-list styled-list-secondary"}

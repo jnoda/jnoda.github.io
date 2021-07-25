@@ -128,3 +128,7 @@
 .theme-color-07aaf5 .widget_product_search .woocommerce-product-search {
 	border-color: #07aaf5;
 }	
+
+.theme-color-07aaf5 .styled-list-secondary li:before {
+  color: #f5075a;
+}

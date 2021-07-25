@@ -67,6 +67,8 @@ Speexx was founded in 2011 and is headquartered in Munich with offices in London
 - Cucumber
 - Liquibase
 - Vaadin
+- Swagger
+- OAuth 2.0
 {: class="styled-list"}
 
 ### Tools and Services
@@ -78,7 +80,7 @@ Speexx was founded in 2011 and is headquartered in Munich with offices in London
     - Bitbucket (+ Pipelines)
 - Git
 - Microsoft Azure
-{: class="styled-list"}
+{: class="styled-list styled-list-secondary"}
 
 ### Servers and Platforms
 
@@ -99,4 +101,4 @@ Speexx was founded in 2011 and is headquartered in Munich with offices in London
 - Behavior Driven Development
 - Integrations
 - DevOps
-{: class="styled-list"}
+{: class="styled-list styled-list-secondary"}
