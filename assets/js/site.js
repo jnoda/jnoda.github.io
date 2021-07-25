@@ -753,11 +753,11 @@
             }
         }
 
-        /** Clients Carousel */
-        var clients_carousel = $(".clients-carousel");
-        if (clients_carousel.length > 0) {
-            for (var i = 0; i < clients_carousel.length; i++) {
-                var carousel = $(clients_carousel[i]);
+        /** Technologies Carousel */
+        var technologies_carousel = $(".technologies-carousel");
+        if (technologies_carousel.length > 0) {
+            for (var i = 0; i < technologies_carousel.length; i++) {
+                var carousel = $(technologies_carousel[i]);
                 var items_count = carousel.children().size();
                 var items_single = false;
 

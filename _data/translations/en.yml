@@ -23,7 +23,7 @@ loading: Loading
 position: Software Architect and Java Developer
 present: Present
 years: +%d years
-skill_level:
+technology_level:
   expert: Expert
   advanced: Advanced
 menu: Menu
@@ -34,6 +34,9 @@ menu_list:
   skills:
     name: Skills
     url: '/en/#skills'
+  technologies:
+    name: Technologies
+    url: '/en/#technologies'
   experience:    
     name: Experience
     url: '/en/#experience'
@@ -72,6 +75,8 @@ hello_page:
       proficiency: Full professional proficiency
   skills:
     title: Professional Skills
+  technologies:
+    title: Technologies
   experience:
     title: Work experience
   education:

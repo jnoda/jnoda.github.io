@@ -23,7 +23,7 @@ loading: Cargando
 position: Arquitecto de Software y Desarrollador Java
 present: Actualidad
 years: +%d años
-skill_level:
+technology_level:
   expert: Experto
   advanced: Avanzado
 menu: Menú
@@ -34,6 +34,9 @@ menu_list:
   skills:
     name: Habilidades
     url: '/es/#skills'
+  technologies:
+    name: Tecnologías
+    url: '/es/#technologies'
   experience:
     name: Experiencia
     url: '/es/#experience'
@@ -72,6 +75,8 @@ hello_page:
       proficiency: Competencia profesional completa
   skills:
     title: Habilidades
+  technologies:
+    title: Tecnologías
   experience:
     title: Experiencia laboral
   education:

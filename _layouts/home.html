@@ -21,7 +21,8 @@ fixed_sidebar: true
                                 </div>
                             </div>
                             <h1 class="profile-title">
-                                <span>{{ site.data.translations[page.lang].hello_page.im }}</span> Julio Noda</h1>
+                                <span>{{ site.data.translations[page.lang].hello_page.im }}</span> Julio Noda
+                            </h1>
 
                             <h2 class="profile-position">{{ site.data.translations[page.lang].position }}</h2>
                         </div>
@@ -51,8 +52,8 @@ fixed_sidebar: true
 
         <div class="section-txt-btn">
             <p>
-                <a class="btn btn-lg btn-border ripple" target="_blank"
-                    href="/assets/julio-noda-{{ page.lang }}.pdf">{{ site.data.translations[page.lang].hello_page.download_resume }}</a>
+                <a class="btn btn-lg btn-border ripple" target="_blank" href="/assets/julio-noda-{{ page.lang }}.pdf">{{
+                    site.data.translations[page.lang].hello_page.download_resume }}</a>
             </p>
             <p>{{ site.data.translations[page.lang].hello_page.headline }}</p>
         </div>
@@ -69,10 +70,10 @@ fixed_sidebar: true
                 <div class="col-sm-6">
                     <div class="progress-bar">
                         <div class="bar-data">
-                            <span
-                                class="bar-title">{{ site.data.translations[page.lang].hello_page.languages.spanish.title }}</span>
-                            <span
-                                class="bar-value">{{ site.data.translations[page.lang].hello_page.languages.spanish.proficiency }}</span>
+                            <span class="bar-title">{{
+                                site.data.translations[page.lang].hello_page.languages.spanish.title }}</span>
+                            <span class="bar-value">{{
+                                site.data.translations[page.lang].hello_page.languages.spanish.proficiency }}</span>
                         </div>
                         <div class="bar-line">
                             <span class="bar-fill" data-width="100%"></span>
@@ -83,10 +84,10 @@ fixed_sidebar: true
                 <div class="col-sm-6">
                     <div class="progress-bar">
                         <div class="bar-data">
-                            <span
-                                class="bar-title">{{ site.data.translations[page.lang].hello_page.languages.english.title }}</span>
-                            <span
-                                class="bar-value">{{ site.data.translations[page.lang].hello_page.languages.english.proficiency }}</span>
+                            <span class="bar-title">{{
+                                site.data.translations[page.lang].hello_page.languages.english.title }}</span>
+                            <span class="bar-value">{{
+                                site.data.translations[page.lang].hello_page.languages.english.proficiency }}</span>
                         </div>
                         <div class="bar-line">
                             <span class="bar-fill" data-width="75%"></span>
@@ -99,22 +100,22 @@ fixed_sidebar: true
 </section>
 <!-- #languages -->
 
-<section id="skills" class="section section-skills section-clients">
+<section id="technologies" class="section section-technologies">
     <div class="animate-up">
-        <h2 class="section-title">{{ site.data.translations[page.lang].hello_page.skills.title }}</h2>
+        <h2 class="section-title">{{ site.data.translations[page.lang].hello_page.technologies.title }}</h2>
 
-        <div class="clients-carousel" style="margin-bottom: 20px">
-            {% for skill in site.data.skills.carrousel %}
-            <div class="client-logo">
-                <a href="{{ skill.link }}" target="_blank">
-                    <img src="/assets/img/logos/{{ skill.logo }}" alt="{{ skill.title }}" title="{{ skill.title }}">
+        <div class="technologies-carousel" style="margin-bottom: 20px">
+            {% for technology in site.data.technologies.carrousel %}
+            <div class="technology-logo">
+                <a href="{{ technology.link }}" target="_blank">
+                    <img src="/assets/img/logos/{{ technology.logo }}" alt="{{ technology.title }}" title="{{ technology.title }}">
                 </a>
             </div>
             {% endfor %}
         </div>
 
         <div class="section-box">
-            {% for skill in site.data.skills.details %}
+            {% for technology in site.data.technologies.details %}
             {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
             {% if thecycle == 'odd' %}
             <div class="row">
@@ -122,12 +123,12 @@ fixed_sidebar: true
                 <div class="col-sm-6">
                     <div class="progress-bar">
                         <div class="bar-data">
-                            <span class="bar-title">{{ skill.title }}</span>
-                            <span class="bar-value">{{ site.data.translations[page.lang].skill_level[skill.level] }}
-                                ({{ site.data.translations[page.lang].years | replace: "%d" , skill.years }})</span>
+                            <span class="bar-title">{{ technology.title }}</span>
+                            <span class="bar-value">{{ site.data.translations[page.lang].technology_level[technology.level] }}
+                                ({{ site.data.translations[page.lang].years | replace: "%d" , technology.years }})</span>
                         </div>
                         <div class="bar-line">
-                            <span class="bar-fill" data-width="{{ skill.percentage }}%"></span>
+                            <span class="bar-fill" data-width="{{ technology.percentage }}%"></span>
                         </div>
                     </div>
                 </div>
@@ -182,8 +183,8 @@ fixed_sidebar: true
         </div>
     </div>
     <div class="section-txt-btn">
-        <a class="btn btn-lg btn-default ripple"
-            href="/{{ page.lang}}/jobs/">{{ site.data.translations[page.lang].see_more }}</a>
+        <a class="btn btn-lg btn-default ripple" href="/{{ page.lang}}/jobs/">{{
+            site.data.translations[page.lang].see_more }}</a>
     </div>
 </section>
 <!-- #experience -->

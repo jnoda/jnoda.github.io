@@ -6751,14 +6751,14 @@ body {
 }
 
 /**
- * 11.11 - Section Clients
+ * 11.11 - Section Technologies
  */
-.section-clients .client-logo {
+.section-technologies .technology-logo {
     text-align: center;
     line-height: 60px;
 }
 
-.section-clients .client-logo img,
+.section-technologies .technology-logo img,
 .timeline-box a.img img,
 .timeline-box img.img {
     max-width: 100%;
@@ -6771,17 +6771,17 @@ body {
     transition: all 0.15s linear 0s;
 }
 
-.section-clients .client-logo a,
-.section-clients .client-logo img {
+.section-technologies .technology-logo a,
+.section-technologies .technology-logo img {
     display: inline-block;
 }
 
-.section-clients .client-logo > a, .section-clients .client-logo > img {
+.section-technologies .technology-logo > a, .section-technologies .technology-logo > img {
     max-width: 75%;
 }
 
-.section-clients .client-logo > a:hover img,
-.section-clients .client-logo > img:hover,
+.section-technologies .technology-logo > a:hover img,
+.section-technologies .technology-logo > img:hover,
 .timeline-box a.img:hover img {
     filter: none;
     -webkit-filter: grayscale(0);
