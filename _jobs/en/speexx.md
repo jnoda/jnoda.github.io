@@ -102,3 +102,17 @@ Speexx was founded in 2011 and is headquartered in Munich with offices in London
 - Integrations
 - DevOps
 {: class="styled-list styled-list-secondary"}
+
+***
+
+## Projects
+
+- [API Gateway]({% link _projects/en/speexx-api-gateway.md %})
+- [Authentication]({% link _projects/en/speexx-authentication.md %})
+- [Core Services]({% link _projects/en/speexx-core-services.md %})
+- [Dacapo2]({% link _projects/en/speexx-dacapo2.md %})
+- [Emails System]({% link _projects/en/speexx-emails-system.md %})
+- [Integrations]({% link _projects/en/speexx-integrations.md %})
+- [Integrations (LMS)]({% link _projects/en/speexx-integrations-lms.md %})
+- [Media Repository]({% link _projects/en/speexx-media-repository.md %})
+- [Test Server]({% link _projects/en/speexx-test-server.md %})
