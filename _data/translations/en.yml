@@ -89,6 +89,16 @@ hello_page:
       photo: lester-kirkland.jpg
       position: Founder and CEO, Resolution Art Inc.
       text: Julio worked for us for many years and consistently demonstrated a very high degree of professionalism in his work. He understands very well the principles of good software development and always applied these principles resulting in the delivering well structured and well documented software. He is a great team player and in my opinion quite capable of leading a team. As far as I'm concerned Julio gets absolute top marks!
+    erika:
+      name: Erika Krajcovicova
+      photo: erika-krajcovicova.jpg
+      position: Digital Product Manager & Senior Data Analyst, Webtools
+      text: Julio and I were colleagues at Webtools, working closely especially on custom solutions in customer excellence measurement and data analytics. Julio is a senior developer and architect with great capacity in scoping and design of projects, as well as delivering high quality, well rounded solutions, meeting and exceeding both functional and other requirements. It was a pleasure to work with Julio, as he always does the utmost to understand client context and help in any way possible. Great team player, and natural leader!
+    basabe:
+      name: Manuel Rodríguez Basabe
+      photo: manuel-rodriguez.jpg
+      position: Software Factory Director, Coremain Caribe S.L.
+      text: "Julio es de esos profesionales que pudiera ser calificado como \"TODOTERRENO\" dicho de otra manera: es capaz de asumir diferentes roles y en disímiles tecnologías, asimilando a su paso todo lo que necesita para hacer una labor realmente profesional. Destaca especialmente su alta capacidad en roles de organización y planificación (Jefe de Proyecto y DevOps), asi como también su alto performance en Arquitectura. Se integra muy bien al trabajo en Equipo y es capaz de interactuar en un grupo interdisciplinario con expertos de otras áreas (Salud, Turismo, etc.). En resumen, contar con Julio Noda como Arquitecto y Jefe de Proyectos, dentro de Coremain Caribe S.L. fue garantía de éxito en todos los Proyectos asumidos en los que participó."
   interests:
     title: My Interests
     text: Enthusiastic about gaining and passing on knowledge, specially new technologies and good practices. Very keen on photography; I also enjoy cinema, music and video games on my free time.
