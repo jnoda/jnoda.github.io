@@ -7,7 +7,12 @@ permalink: /en/projects/speexx-integrations/
 date: 2019-09-06
 
 ---
--- PROJECT DESCRIPTION GOES HERE --
+
+This application is an "umbrella" Spring Boot application comprising several different integrations.
+
+The goal of the __Workable integration__ is to provide customers that use [Workable](https://www.workable.com){:target="_blank" rel="noopener"} as part of their recruitment process, with the tools to allow job candidates to take Speexx language assessments whose results can be seen later directly in the Workable platform by recruiters.
+
+The __Microsoft Teams integration__ allows students that are already using [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software){:target="_blank" rel="noopener"} in their organization, to gain access to Speexx training directly from inside the application.
 
 ## Details
 

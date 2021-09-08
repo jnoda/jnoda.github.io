@@ -7,7 +7,11 @@ permalink: /en/projects/speexx-core-services/
 date: 2020-03-04
 
 ---
--- PROJECT DESCRIPTION GOES HERE --
+
+__Speexx Core Services__ is a Spring Boot web application wrapping most of the business logic and main database access of the Speexx ecosystem, making it available as REST web services for other applications. The implementation of the logic still resides on a shared monolithic artifact, but this is the first step towards decoupling applications that needs access to this logic from the actual implementation.
+
+This project opens the path to evolve a more modular ecosystem by applying a Strangler Fig pattern.
+Additionally, allows exposing the business logic to external partners using an API Gateway without additional development cost.
 
 ## Details
 
