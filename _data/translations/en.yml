@@ -31,9 +31,9 @@ menu_list:
   about:
     name: About
     url: '/en/#about'
-  skills:
-    name: Skills
-    url: '/en/#skills'
+  languages:
+    name: Languages
+    url: '/en/#languages'
   technologies:
     name: Technologies
     url: '/en/#technologies'
