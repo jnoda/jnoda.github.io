@@ -6,7 +6,7 @@ permalink: /en/jobs/speexx/
 
 position: Senior Java Software Developer
 date: 2018-08-20
-to_date: 
+to_date: 2021-10-18
 location: Madrid, Spain
 
 media:

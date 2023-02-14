@@ -6,7 +6,7 @@ permalink: /es/jobs/speexx/
 
 position: Desarrollador Java Senior
 date: 2018-08-20
-to_date: 
+to_date: 2021-10-18
 location: Madrid, España
 
 media:
