@@ -16,7 +16,9 @@ excerpt: |
     TODO
 ---
 
-TODO
+[Affirm](https://www.affirm.com){:target="_blank" rel="noopener"} is a publicly traded financial technology company headquartered in San Francisco, United States. Founded in 2012, the company operates as a financial lender of installment loans for consumers to use at the point of sale to finance a purchase.
+
+Affirm’s mission is to deliver honest financial products that improve lives. With that in mind, it is building the next generation platform for digital and mobile-first commerce, making it easier for consumers to spend responsibly and with confidence, easier for merchants to convert sales and grow, and easier for commerce to thrive.
 
 ***
 
@@ -33,6 +35,7 @@ TODO
 - Kotlin
 - Gradle
 - Spring
+    - Batch
     - Boot
     - Framework
 - JOOQ

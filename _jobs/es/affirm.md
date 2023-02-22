@@ -16,7 +16,9 @@ excerpt: |
     TODO
 ---
 
-TODO
+[Affirm](https://www.affirm.com){:target="_blank" rel="noopener"} es una empresa tecnológica financiera que cotiza en bolsa y tiene su sede en San Francisco, Estados Unidos. Fundada en 2012, la compañía opera como un prestamista financiero que ofrece préstamos a plazos para que los consumidores utilicen en los puntos de venta para financiar sus compras.
+
+La missión de Affirm es la entrega de productos financieros honestos que mejoren las vidas. Con esto en mente, está construyendo la plataforma de próxima generación para el comercio digital y móvil, facilitando a los consumidores gastar responsablemente y con confianza, a los comerciantes convertir ventas y crecer, y al comercio prosperar.
 
 ***
 
@@ -33,6 +35,7 @@ TODO
 - Kotlin
 - Gradle
 - Spring
+    - Batch
     - Boot
     - Framework
 - JOOQ
